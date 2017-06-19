@@ -25,25 +25,6 @@ if ( post_password_required() ) {
 	<?php
 	// You can start editing here -- including this comment!
 	if ( have_comments() ) : ?>
-		<h2 class="comments-title">
-			<?php
-				$comment_count = get_comments_number();
-				if ( 1 === $comment_count ) {
-					printf(
-						/* translators: 1: title. */
-						esc_html_e( 'One thought on &ldquo;%1$s&rdquo;', 'kilobyte' ),
-						'<span>' . get_the_title() . '</span>'
-					);
-				} else {
-					printf( // WPCS: XSS OK.
-						/* translators: 1: comment count number, 2: title. */
-						esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $comment_count, 'comments title', 'kilobyte' ) ),
-						number_format_i18n( $comment_count ),
-						'<span>' . get_the_title() . '</span>'
-					);
-				}
-			?>
-		</h2><!-- .comments-title -->
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 		<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
@@ -60,6 +41,7 @@ if ( post_password_required() ) {
 		<ol class="comment-list">
 			<?php
 				wp_list_comments( array(
+					'avatar_size' => 48,
 					'style'      => 'ol',
 					'short_ping' => true,
 				) );
@@ -88,8 +70,44 @@ if ( post_password_required() ) {
 		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'kilobyte' ); ?></p>
 	<?php
 	endif;
+	$commenter = wp_get_current_commenter();
+	$req = get_option( 'require_name_email' );
+	$aria_req = ( $req ? " aria-required='true'" : '' );
+	$required_text = '';
 
-	comment_form();
-	?>
+	$fields =  array(
+
+		'author' => '<div class="comment-form-author form-group"><label class="control-label col-sm-2" for="author">' . __( 'Name', 'kilobyte' ) . '</label><div class="col-sm-10"><input id="author" placeholder=" ' . ( $req ? 'Required' : '' ) . '"  name="author" class="form-control" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></div></div>',
+
+		'email' => '<div class="comment-form-email form-group"><label class="control-label col-sm-2" for="email">' . __( 'Email', 'kilobyte' ) . '</label><div class="col-sm-10"><input id="email"  placeholder=" ' . ( $req ? 'Required' : '' ) . '" name="email" class="form-control" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></div></div>',
+
+		'url' => '<div class="comment-form-url form-group"><label class="control-label col-sm-2" for="url">' . __( 'Website', 'kilobyte' ) . '</label><div class="col-sm-10">' . '<input id="url" name="url" type="text" class="form-control" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></div></div>',
+	);
+
+	$args = array(
+		'id_form'           => 'commentform',
+		'class_form'        => 'comment-form',
+		'id_submit'         => 'submit',
+		'class_submit'      => 'submit',
+		'name_submit'       => 'submit',
+		'title_reply'       => __( 'Leave a Reply', 'kilobyte' ),
+		'title_reply_to'    => __( 'Leave a Reply to %s', 'kilobyte' ),
+		'cancel_reply_link' => __( 'Cancel Reply', 'kilobyte' ),
+		'label_submit'      => __( 'Post Comment', 'kilobyte' ),
+		'format'            => 'xhtml',
+		'class_submit'      => 'btn btn-info pull-right',
+
+		'comment_field' =>  '<div class="comment-form-comment form-group"><label class="control-label col-sm-2" for="comment">' . _x( 'Comment', 'noun', 'kilobyte' ) . '</label><div class="col-sm-10"><textarea id="comment" class="form-control" name="comment" placeholder="Your Comment Here" cols="45" rows="8" aria-required="true">' . '</textarea></div></div>',
+
+		'must_log_in' => '<p class="must-log-in">' . sprintf( __( 'You must be <a href="%s">logged in</a> to post a comment.', 'kilobyte' ),
+		wp_login_url( apply_filters( 'the_permalink', get_permalink() ) ) ) . '</p>',
+
+		'logged_in_as' => '<p class="logged-in-as">' . sprintf(
+		__( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>', 'kilobyte' ), 	admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) )	) . '</p>',
+
+		'fields' => apply_filters( 'comment_form_default_fields', $fields ),
+	);
+	comment_form($args); ?>
 
 </div><!-- #comments -->
+<div class="col-xs-12"><hr /></div>
