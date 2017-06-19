@@ -29,14 +29,14 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand site-title-nav" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+			<img src="<?php echo get_stylesheet_directory_uri().'/img/logo.png';?>" class="img-responsive logo-image">
 		</div>
-		<div id="top-menu" class="navbar-collapse collapse">
+		<div id="top-menu" class="navbar-collapse collapse navbar-right">
 			<?php
 				$args = array(
 					'theme_location' => 'top',
 					'container' => 'ul',
-					'menu_class' => 'nav navbar-nav',
+					'menu_class' => 'nav navbar-nav menu-bar',
 					'items_wrap' => '<ul id = "%1$s" class = "%2$s">%3$s</ul>',
 					'depth' => 0,
 					'walker' => new Walker_Nav_top(),
