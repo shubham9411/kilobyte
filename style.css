@@ -87,3 +87,39 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 		font-size: 1.2em;
 	}
 }
+.wrap.card{
+	margin-top: 2em;
+}
+.port-meta {
+	background: #fff;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s linear;
+	position: absolute;
+	top: 13%;
+	width: 90%;
+	box-shadow: 0 0 2px 0px rgba(12, 3, 25, 0.8);
+	margin-left: 13px;
+}
+.wrap.card:hover .port-meta{
+	visibility: visible;
+	opacity: 1;
+}
+.port-meta .head{
+	font-size: 50px;
+	margin: 0;
+	font-family: 'Anton', sans-serif;
+}
+.port-meta{
+	padding: 15px;	
+}
+.port-meta .bodytext{
+	font-family: 'Poiret One', cursive;
+	font-weight: bold;
+}
+.wrap.card img{
+	width: 100%;
+}
+.portfolio{
+	margin-bottom: 5em;
+}
