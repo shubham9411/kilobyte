@@ -117,6 +117,125 @@ function kilobyte_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'kilobyte_scripts' );
 
+
+//custom post type
+function kilobyte_custom_post_type(){
+	$labels = array( 
+		'name'=>'portfolio',
+		'singular_name'=>'portfolio',
+		'add_new' => 'Add portfolio',
+		'all_items' => 'All portfolio',
+		'add_new_item'=> 'Add portfolio',
+		'new_item' => 'New portfolio',
+		'view_item' => 'View portfolio',
+		'search_item' => 'Search Portfolio',
+		'not_found' =>	'no items found',
+		'not_found_in_trash' => 'not found in trash',
+		'parent_item_colon' => 'parent'	
+		);
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+		'has_archive' => true,
+		'publicaly_queryable' => true, 
+		'query_var' => true,
+		'rewrite' => true,
+		'capability_type' =>'post',
+		'heirarchical' => false,
+		'support' => array(
+			'title',
+			'editor',
+			'thumbnail',
+			'excerpt',
+			'revisons',
+			'post_formats'
+			),
+		//'taxonomy' => array('category', 'post_tag'),
+		'menu_position' => 5,
+		'exclude_from_search' => false
+		);
+
+	register_post_type('portfolio',$args);
+}
+
+add_action('init','kilobyte_custom_post_type' );
+
+//custom post 2
+
+//custom post type
+function kilobyte_custom_post_type2(){
+	$labels2 = array( 
+		'name'=>'case study',
+		'singular_name'=>'case study',
+		'add_new' => 'Add case study',
+		'all_items' => 'All case study',
+		'add_new_item'=> 'Add case study',
+		'new_item' => 'New case study',
+		'view_item' => 'View case study',
+		'search_item' => 'Search case study',
+		'not_found' =>	'no items found',
+		'not_found_in_trash' => 'not found in trash',
+		'parent_item_colon' => 'parent'	
+		);
+	$args2 = array(
+		'labels' => $labels2,
+		'public' => true,
+		'has_archive' => true,
+		'publicaly_queryable' => true, 
+		'query_var' => true,
+		'rewrite' => true,
+		'capability_type' =>'post',
+		'heirarchical' => false,
+		'support' => array(
+			'title',
+			'editor',
+			'thumbnail',
+			'excerpt',
+			'revisons',
+			'post_formats'
+			),
+		//'taxonomy' => array('category', 'post_tag'),
+		'menu_position' => 5,
+		'exclude_from_search' => false
+		);
+
+	register_post_type('case study',$args2);
+}
+
+add_action('init','kilobyte_custom_post_type2' );
+
+
+//custom taxonomies
+function kilobyte_custom_taxonomy(){
+$labels = array(
+		'name'              => 'fields',
+		'singular_name'     => 'fields',
+		'search_items'      => 'search types',
+		'all_items'         => 'all types',
+		'parent_item'       => 'parent Type',
+		'parent_item_colon' => 'parent Type',
+		'edit_item'         => 'edit Type',
+		'update_item'       => 'update Type',
+		'new_item_name'     => 'new type Name',
+		'menu_name'         => 'Field'
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'field' ),
+	);
+	register_taxonomy('field',array('portfolio','casestudy'),$args );
+	}
+
+add_action('init','kilobyte_custom_taxonomy' );
+
+
+
+
 /**
  * Implement the Custom Header feature.
  */
