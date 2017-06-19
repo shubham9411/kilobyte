@@ -33,6 +33,8 @@ function kilobyte_setup() {
 	 * hard-coded <title> tag in the document head, and expect WordPress to
 	 * provide it for us.
 	 */
+	add_image_size( 'portifolio-thumbnail', 300, 200, true );
+
 	add_theme_support( 'title-tag' );
 
 	/*
@@ -149,7 +151,7 @@ function kilobyte_custom_post_type_portfolio(){
 			'thumbnail',
 			'excerpt',
 			'revisons',
-			'post_formats'
+			'custom-fields',
 			),
 		'menu_position' => 5,
 		'exclude_from_search' => false
@@ -264,8 +266,10 @@ $labels = array(
 
 add_action('init','kilobyte_custom_taxonomy_casestudy' );
 
-// theme support
-add_theme_support( 'post-thumbnails');
+function kilobyte_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'kilobyte_custom_excerpt_length', 999 );
 
 /**
  * Implement the Custom Header feature.
