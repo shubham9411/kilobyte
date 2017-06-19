@@ -20,4 +20,15 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 */
 
-/*--------------------------------------------------------------
+.card:hover{
+	-webkit-box-shadow: 5px 5px 18px 0px rgba(102,87,87,0.77);
+	-moz-box-shadow: 5px 5px 18px 0px rgba(102,87,87,0.77);
+	box-shadow: 5px 5px 18px 0px rgba(102,87,87,0.77); 
+}
+.card{
+	transition:0.7s;
+	-webkit-box-shadow: 1px 1px 8px 0px rgba(102,87,87,0.77);
+	-moz-box-shadow: 1px 1px 8px 0px rgba(102,87,87,0.77);
+	box-shadow: 1px 1px 8px 0px rgba(102,87,87,0.77);
+	cursor: pointer;
+}
