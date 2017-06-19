@@ -1,9 +1,9 @@
 <?php
-get_header(); 
+get_header();
 /* 
 Template Name: casestudies
 */
-get_header();
+
 ?>
 <div class="row container">
 <?php
@@ -23,6 +23,7 @@ if($loop->have_posts()):
 	<?php 
 	endwhile;
 endif;
+
 ?>
 </div>
 <?php 

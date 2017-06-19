@@ -70,3 +70,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 		font-size: 1.2em;
 	}
 }
+
+.blogc{
+	height:100px;
+	width: auto;
+}
