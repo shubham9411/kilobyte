@@ -118,8 +118,9 @@ function kilobyte_scripts() {
 add_action( 'wp_enqueue_scripts', 'kilobyte_scripts' );
 
 
-//custom post type
-function kilobyte_custom_post_type(){
+//custom post type portfolio
+ if(! function_exists( 'kilobyte_custom_post_type_portfolio' )):
+function kilobyte_custom_post_type_portfolio(){
 	$labels = array( 
 		'name'=>'portfolio',
 		'singular_name'=>'portfolio',
@@ -157,13 +158,13 @@ function kilobyte_custom_post_type(){
 
 	register_post_type('portfolio',$args);
 }
+endif;
 
-add_action('init','kilobyte_custom_post_type' );
+add_action('init','kilobyte_custom_post_type_portfolio' );
 
-//custom post 2
-
-//custom post type
-function kilobyte_custom_post_type2(){
+//custom post type case study
+if(!function_exists( 'kilobyte_custom_post_type_casestudy')):
+function kilobyte_custom_post_type_casestudy(){
 	$labels2 = array( 
 		'name'=>'case study',
 		'singular_name'=>'case study',
@@ -201,11 +202,12 @@ function kilobyte_custom_post_type2(){
 
 	register_post_type('case study',$args2);
 }
+endif;
 
-add_action('init','kilobyte_custom_post_type2' );
-
+add_action('init','kilobyte_custom_post_type_casestudy' );
 
 //custom taxonomies
+if ( ! function_exists( 'kilobyte_custom_taxonomy')):
 function kilobyte_custom_taxonomy(){
 $labels = array(
 		'name'              => 'fields',
@@ -230,6 +232,7 @@ $labels = array(
 	);
 	register_taxonomy('field',array('portfolio','casestudy'),$args );
 	}
+	endif;
 
 add_action('init','kilobyte_custom_taxonomy' );
 
