@@ -32,3 +32,41 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 	box-shadow: 1px 1px 8px 0px rgba(102,87,87,0.77);
 	cursor: pointer;
 }
+.logo-image{
+	width: 8em;
+    margin-top: -2.4em;
+}
+#site-header-nav{
+	background-color: transparent;
+	padding-top: 0.3em;
+	border: none;
+}
+
+.menu-bar > li > a{
+	font-size: 1.3em;
+}
+.tagline{
+	font-size: 6em;
+	font-weight: bold;
+}
+
+.start-btn button{
+	margin-top: 1.5em;
+	border:none;
+	border-radius: 25px;
+	width: 9em;
+	color: white;
+	background-color:#00CC66;
+}
+.hero-part{
+	padding-top: 3em;
+	text-align: center;
+}
+@media only screen and (max-width: 500px) {
+	.tagline{
+		font-size: 3.5em;
+	}
+	.short-intro{
+		font-size: 1.2em;
+	}
+}
