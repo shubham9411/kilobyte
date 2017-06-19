@@ -19,6 +19,11 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 */
+
+body{
+	font-family: 'Oswald', sans-serif;
+}
+
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
@@ -69,10 +74,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 
 .menu-bar > li > a{
 	font-size: 1.3em;
+	font-family: 'Oswald', sans-serif;
+	font-style: normal;
 }
 .tagline{
 	font-size: 6em;
 	font-weight: bold;
+	font-family: 'Francois One', sans-serif;
 }
 
 .start-btn button{
@@ -82,13 +90,24 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 	width: 9em;
 	color: white;
 	background-color:#00CC66;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	outline: none;
+	transition:1s;
 }
+.start-btn button:hover{
+	background-color: #FF0066;
+}
+
 .hero-part{
 	padding-top: 3em;
 	text-align: center;
 }
 .thumbnail{
 	width: auto;
+}
+.short-intro{
+	font-family: 'Francois One', sans-serif;
 }
 @media only screen and (max-width: 500px) {
 	.tagline{
@@ -195,5 +214,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 	background: #efe;
 }
 .case-study-content{
-	font-size: 1.2em;
+	padding: 1em 1.7em;
+	font-size: 1.4em;
 }

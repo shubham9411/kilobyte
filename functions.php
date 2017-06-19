@@ -107,9 +107,9 @@ add_action( 'widgets_init', 'kilobyte_widgets_init' );
  * Enqueue scripts and styles.
  */
 function kilobyte_scripts() {
-	wp_enqueue_style( 'kilobyte-style', get_stylesheet_uri() );
-
 	wp_enqueue_style( 'kilobyte-bootstrap', get_template_directory_uri() . '/css/bootstrap.css' );
+
+	wp_enqueue_style( 'kilobyte-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'kilobyte-bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array( 'jquery' ), '20151215', true );
 
