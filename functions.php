@@ -143,7 +143,7 @@ function kilobyte_custom_post_type_portfolio(){
 		'rewrite' => true,
 		'capability_type' =>'post',
 		'heirarchical' => false,
-		'support' => array(
+		'supports' => array(
 			'title',
 			'editor',
 			'thumbnail',
@@ -151,7 +151,6 @@ function kilobyte_custom_post_type_portfolio(){
 			'revisons',
 			'post_formats'
 			),
-		//'taxonomy' => array('category', 'post_tag'),
 		'menu_position' => 5,
 		'exclude_from_search' => false
 		);
@@ -187,7 +186,7 @@ function kilobyte_custom_post_type_casestudy(){
 		'rewrite' => true,
 		'capability_type' =>'post',
 		'heirarchical' => false,
-		'support' => array(
+		'supports' => array(
 			'title',
 			'editor',
 			'thumbnail',
@@ -195,12 +194,11 @@ function kilobyte_custom_post_type_casestudy(){
 			'revisons',
 			'post_formats'
 			),
-		//'taxonomy' => array('category', 'post_tag'),
-		'menu_position' => 5,
+		'menu_position' => 6,
 		'exclude_from_search' => false
 		);
 
-	register_post_type('case study',$args2);
+	register_post_type('casestudy',$args2);
 }
 endif;
 
@@ -210,8 +208,8 @@ add_action('init','kilobyte_custom_post_type_casestudy' );
 if ( ! function_exists( 'kilobyte_custom_taxonomy')):
 function kilobyte_custom_taxonomy(){
 $labels = array(
-		'name'              => 'fields',
-		'singular_name'     => 'fields',
+		'name'              => 'portfolio category',
+		'singular_name'     => 'portfolio category',
 		'search_items'      => 'search types',
 		'all_items'         => 'all types',
 		'parent_item'       => 'parent Type',
@@ -219,7 +217,7 @@ $labels = array(
 		'edit_item'         => 'edit Type',
 		'update_item'       => 'update Type',
 		'new_item_name'     => 'new type Name',
-		'menu_name'         => 'Field'
+		'menu_name'         => 'portfolio category'
 	);
 
 	$args = array(
@@ -228,16 +226,46 @@ $labels = array(
 		'show_ui'           => true,
 		'show_admin_column' => true,
 		'query_var'         => true,
-		'rewrite'           => array( 'slug' => 'field' ),
+		'rewrite'           => array( 'slug' => 'portfolio category' ),
 	);
-	register_taxonomy('field',array('portfolio','casestudy'),$args );
+	register_taxonomy('portfolio category',array('portfolio'),$args );
 	}
 	endif;
 
 add_action('init','kilobyte_custom_taxonomy' );
 
+// taxonomy for casestudy
+if ( ! function_exists( 'kilobyte_custom_taxonomy_casestudy')):
+function kilobyte_custom_taxonomy_casestudy(){
+$labels = array(
+		'name'              => 'casestudy category',
+		'singular_name'     => 'casestudy category',
+		'search_items'      => 'search types',
+		'all_items'         => 'all types',
+		'parent_item'       => 'parent Type',
+		'parent_item_colon' => 'parent Type',
+		'edit_item'         => 'edit Type',
+		'update_item'       => 'update Type',
+		'new_item_name'     => 'new type Name',
+		'menu_name'         => 'casestudy category'
+	);
 
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'casestudy category' ),
+	);
+	register_taxonomy('casestudy category',array('casestudy'),$args );
+	}
+	endif;
 
+add_action('init','kilobyte_custom_taxonomy_casestudy' );
+
+// theme support
+add_theme_support( 'post-thumbnails');
 
 /**
  * Implement the Custom Header feature.
