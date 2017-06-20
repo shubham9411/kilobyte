@@ -11,9 +11,9 @@ $args = array('post_type' => 'post' );
 $loop = new WP_Query($args);
 if($loop->have_posts()):
 	while ($loop->have_posts()): $loop->the_post(); ?>
-	<div class="card col-sm-4 blogc">
+	<div class="card col-sm-4 col-xs-6 blogc">
 	<div class="thumbnail"><?php if(has_post_thumbnail() ){ ?>
-	<?php the_post_thumbnail('large','class= img-responsive');
+	<?php the_post_thumbnail('medium_large','class= img-responsive');
 	}
 	?>
 	</div>

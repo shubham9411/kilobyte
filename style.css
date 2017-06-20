@@ -158,9 +158,24 @@ body{
 .blogc{
 	padding-top: 3px;
 	height: 410px;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 }
 
+@media screen and (max-width: 740px) {
+	.blogc{
+		height: 350px;
+		padding: 20px;
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+	.blogc{
+		height: auto;
+		width: 100%;
+		padding: 20px;
+	}
+}
 
 #main{
 	font-size: 1.3em;
