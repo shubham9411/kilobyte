@@ -72,6 +72,10 @@ body{
 	border: none;
 }
 
+.navbar-nav > li > a:hover {
+    border-bottom: 1px solid black;
+}
+
 .menu-bar > li > a{
 	font-size: 1.3em;
 	font-family: 'Oswald', sans-serif;
