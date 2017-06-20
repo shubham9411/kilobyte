@@ -112,23 +112,6 @@ h6 {
 .short-intro{
 	font-family: 'Francois One', sans-serif;
 }
-@media only screen and (max-width: 480px) {
-	.tagline{
-		font-size: 3.5em;
-	}
-	.short-intro{
-		font-size: 1.2em;
-	}
-	.blogc{
-		width: 85% !important;
-	}
-}
-@media only screen and (min-width: 480px) and (max-width: 992px) {
-	.blogc{
-		width: 45% !important;
-	}
-}
-
 .wrap.card{
 	margin-top: 2em;
 }
@@ -237,4 +220,49 @@ h6 {
 .blog-detail{
 	padding-left: 1em;
 	font-size: 1.2em;
+}
+@media only screen and (max-width: 480px) {
+	.tagline{
+		font-size: 3.5em;
+	}
+	.short-intro{
+		font-size: 1.2em;
+	}
+	.blogc{
+		width: 85% !important;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 992px) {
+	.blogc{
+		width: 45% !important;
+	}
+	.port-meta{
+		padding: 10px;
+		width: 80%;
+		top: 20%;
+	}
+	.port-meta .head{
+		font-size: 36px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.port-meta{
+		padding: 10px;
+		width: 80%;
+		top: 15%;
+	}
+	.port-meta .head{
+		font-size: 36px;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.port-meta{
+		padding: 10px;
+		width: 80%;
+		top: 20%;
+	}
+	.port-meta .head{
+		font-size: 20px;
+	}
 }
