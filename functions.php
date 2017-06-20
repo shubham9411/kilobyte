@@ -124,13 +124,13 @@ add_action( 'wp_enqueue_scripts', 'kilobyte_scripts' );
  if(! function_exists( 'kilobyte_custom_post_type_portfolio' )):
 function kilobyte_custom_post_type_portfolio(){
 	$labels = array( 
-		'name'=>'portfolio',
-		'singular_name'=>'portfolio',
-		'add_new' => 'Add portfolio',
-		'all_items' => 'All portfolio',
-		'add_new_item'=> 'Add portfolio',
-		'new_item' => 'New portfolio',
-		'view_item' => 'View portfolio',
+		'name'=>'Portfolio',
+		'singular_name'=>'Portfolio',
+		'add_new' => 'Add Portfolio',
+		'all_items' => 'All Portfolio',
+		'add_new_item'=> 'Add Portfolio',
+		'new_item' => 'New Portfolio',
+		'view_item' => 'View Portfolio',
 		'search_item' => 'Search Portfolio',
 		'not_found' =>	'no items found',
 		'not_found_in_trash' => 'not found in trash',
@@ -154,27 +154,28 @@ function kilobyte_custom_post_type_portfolio(){
 			'custom-fields',
 			),
 		'menu_position' => 5,
+		'rewrite' => array( 'slug' => 'portfolio','with_front' => false ),
 		'exclude_from_search' => false
 		);
 
-	register_post_type('portfolio',$args);
+	register_post_type('post-type-portfolio',$args);
 }
 endif;
 
 add_action('init','kilobyte_custom_post_type_portfolio' );
 
-//custom post type case study
+//custom post type Case Study
 if(!function_exists( 'kilobyte_custom_post_type_casestudy')):
 function kilobyte_custom_post_type_casestudy(){
 	$labels2 = array( 
-		'name'=>'case study',
-		'singular_name'=>'case study',
-		'add_new' => 'Add case study',
-		'all_items' => 'All case study',
-		'add_new_item'=> 'Add case study',
-		'new_item' => 'New case study',
-		'view_item' => 'View case study',
-		'search_item' => 'Search case study',
+		'name'=>'Case Study',
+		'singular_name'=>'Case Study',
+		'add_new' => 'Add Case Study',
+		'all_items' => 'All Case Study',
+		'add_new_item'=> 'Add Case Study',
+		'new_item' => 'New Case Study',
+		'view_item' => 'View Case Study',
+		'search_item' => 'Search Case Study',
 		'not_found' =>	'no items found',
 		'not_found_in_trash' => 'not found in trash',
 		'parent_item_colon' => 'parent'	
@@ -185,7 +186,7 @@ function kilobyte_custom_post_type_casestudy(){
 		'has_archive' => true,
 		'publicaly_queryable' => true, 
 		'query_var' => true,
-		'rewrite' => true,
+		'rewrite' => array( 'slug' => 'casestudy','with_front' => false ),
 		'capability_type' =>'post',
 		'heirarchical' => false,
 		'supports' => array(
@@ -194,13 +195,14 @@ function kilobyte_custom_post_type_casestudy(){
 			'thumbnail',
 			'excerpt',
 			'revisons',
-			'post_formats'
+			'post_formats',
+			'custom-fields'
 			),
 		'menu_position' => 6,
 		'exclude_from_search' => false
 		);
 
-	register_post_type('casestudy',$args2);
+	register_post_type('post-type-casestudy',$args2);
 }
 endif;
 
@@ -210,8 +212,8 @@ add_action('init','kilobyte_custom_post_type_casestudy' );
 if ( ! function_exists( 'kilobyte_custom_taxonomy')):
 function kilobyte_custom_taxonomy(){
 $labels = array(
-		'name'              => 'portfolio category',
-		'singular_name'     => 'portfolio category',
+		'name'              => 'Portfolio types',
+		'singular_name'     => 'Portfolio types',
 		'search_items'      => 'search types',
 		'all_items'         => 'all types',
 		'parent_item'       => 'parent Type',
@@ -219,7 +221,7 @@ $labels = array(
 		'edit_item'         => 'edit Type',
 		'update_item'       => 'update Type',
 		'new_item_name'     => 'new type Name',
-		'menu_name'         => 'portfolio category'
+		'menu_name'         => 'Portfolio types'
 	);
 
 	$args = array(
@@ -228,9 +230,9 @@ $labels = array(
 		'show_ui'           => true,
 		'show_admin_column' => true,
 		'query_var'         => true,
-		'rewrite'           => array( 'slug' => 'portfolio category' ),
+		'rewrite'           => array( 'slug' => 'portfolio/type','with_front' => false ),
 	);
-	register_taxonomy('portfolio category',array('portfolio'),$args );
+	register_taxonomy('Portfolio Types',array('post-type-portfolio'),$args );
 	}
 	endif;
 
@@ -240,8 +242,8 @@ add_action('init','kilobyte_custom_taxonomy' );
 if ( ! function_exists( 'kilobyte_custom_taxonomy_casestudy')):
 function kilobyte_custom_taxonomy_casestudy(){
 $labels = array(
-		'name'              => 'casestudy category',
-		'singular_name'     => 'casestudy category',
+		'name'              => 'Casestudy type',
+		'singular_name'     => 'Casestudy type',
 		'search_items'      => 'search types',
 		'all_items'         => 'all types',
 		'parent_item'       => 'parent Type',
@@ -249,7 +251,7 @@ $labels = array(
 		'edit_item'         => 'edit Type',
 		'update_item'       => 'update Type',
 		'new_item_name'     => 'new type Name',
-		'menu_name'         => 'casestudy category'
+		'menu_name'         => 'Casestudy type'
 	);
 
 	$args = array(
@@ -258,9 +260,9 @@ $labels = array(
 		'show_ui'           => true,
 		'show_admin_column' => true,
 		'query_var'         => true,
-		'rewrite'           => array( 'slug' => 'casestudy category' ),
+		'rewrite'           => array( 'slug' => 'casestudy/type' ),
 	);
-	register_taxonomy('casestudy category',array('casestudy'),$args );
+	register_taxonomy('Casestudy type',array('post-type-casestudy'),$args );
 	}
 	endif;
 
@@ -270,6 +272,17 @@ function kilobyte_custom_excerpt_length( $length ) {
     return 20;
 }
 add_filter( 'excerpt_length', 'kilobyte_custom_excerpt_length', 999 );
+
+/**
+ * Function for continue reading excerpts.
+ */
+if ( ! function_exists( 'kilobyte_excerpt_more' ) ) {
+	function kilobyte_excerpt_more() {
+		global $post;
+		return '... <a href="' . get_the_permalink() . '" title="Read More" class="read-more">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'kilobyte' ) . '</a>';
+	}
+	add_filter( 'excerpt_more', 'kilobyte_excerpt_more' );
+}
 
 /**
  * Implement the Custom Header feature.

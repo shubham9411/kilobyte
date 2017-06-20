@@ -23,7 +23,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 body{
 	font-family: 'Oswald', sans-serif;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Francois One', sans-serif;
+}
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
@@ -72,14 +79,34 @@ body{
 	border: none;
 }
 
-.navbar-nav > li > a:hover {
-    border-bottom: 1px solid black;
+
+
+.navbar-nav > li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.navbar-nav > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .menu-bar > li > a{
 	font-size: 1.3em;
 	font-family: 'Oswald', sans-serif;
 	font-style: normal;
+	transition: .7s;
 }
 .tagline{
 	font-size: 6em;
@@ -113,12 +140,20 @@ body{
 .short-intro{
 	font-family: 'Francois One', sans-serif;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
 	.tagline{
 		font-size: 3.5em;
 	}
 	.short-intro{
 		font-size: 1.2em;
+	}
+	.blogc{
+		width: 85% !important;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 992px) {
+	.blogc{
+		width: 45% !important;
 	}
 }
 
@@ -158,11 +193,12 @@ body{
 .portfolio{
 	margin-bottom: 5em;
 }
-
 .blogc{
-	padding-top: 3px;
+	padding:0;
 	height: 410px;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
+	width: 31%;
+	margin-left: 1.5em;
 }
 
 @media screen and (max-width: 740px) {
@@ -244,4 +280,7 @@ body{
 .case-study-content{
 	padding: 1em 1.7em;
 	font-size: 1.4em;
+}
+.blog-detail{
+	padding-left: 1em;
 }
