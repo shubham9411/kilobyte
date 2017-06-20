@@ -15,7 +15,7 @@ $loop = new WP_Query( $args );
 if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();
 	// echo get_post_meta($post->ID, 'sub_heading', true);
 	?>
-	<div class="col-xs-6">
+	<div class="col-md-6 col-xs-12 col-sm-6">
 		<div class="wrap card">
 			<?php the_post_thumbnail( 'portifolio-thumbnail', 'class=img-responsive' ); ?>
 			<div class="port-meta">
