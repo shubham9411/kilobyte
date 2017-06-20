@@ -21,10 +21,10 @@
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php kilobyte_posted_on(); ?>
-			<hr />
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
+		<hr />
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

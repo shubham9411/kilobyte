@@ -5,7 +5,6 @@ Template Name: Portfolio
 
 get_header();
 ?>
-<link href="https://fonts.googleapis.com/css?family=Anton|Poiret+One" rel="stylesheet">
 <div class="container portfolio">
 <?php
 $args = array(
