@@ -268,8 +268,10 @@ $labels = array(
 
 add_action('init','kilobyte_custom_taxonomy_casestudy' );
 
-// theme support
-add_theme_support( 'post-thumbnails');
+function kilobyte_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'kilobyte_custom_excerpt_length', 999 );
 
 /**
  * Function for continue reading excerpts.

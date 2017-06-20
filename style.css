@@ -124,6 +124,7 @@ h6 {
 		font-size: 1.2em;
 	}
 }
+
 .wrap.card{
 	margin-top: 2em;
 }
@@ -148,7 +149,7 @@ h6 {
 	font-family: 'Anton', sans-serif;
 }
 .port-meta{
-	padding: 15px;	
+	padding: 15px;
 }
 .port-meta .bodytext{
 	font-family: 'Poiret One', cursive;
@@ -159,6 +160,11 @@ h6 {
 }
 .portfolio{
 	margin-bottom: 5em;
+}
+.blogc{
+	padding-top: 3px;
+	height: 410px;
+	margin-bottom: 20px;
 }
 #main{
 	font-size: 1.3em;

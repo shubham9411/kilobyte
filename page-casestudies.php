@@ -1,8 +1,8 @@
 <?php
-get_header();
 /*
 Template Name: casestudies
 */
+
 get_header();
 ?>
 <div class="container">
