@@ -106,8 +106,7 @@ h6 {
 }
 .tagline{
 	font-size: 6em;
-	font-weight: bold;
-	font-family: 'Francois One', sans-serif;
+	font-family: 'Anton', sans-serif;
 }
 
 .start-btn button{
@@ -134,7 +133,7 @@ h6 {
 	width: auto;
 }
 .short-intro{
-	font-family: 'Francois One', sans-serif;
+	font-family: 'Share Tech Mono', monospace;
 }
 .wrap.card{
 	margin-top: 2em;
