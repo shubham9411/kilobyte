@@ -23,7 +23,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 body{
 	font-family: 'Oswald', sans-serif;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Francois One', sans-serif;
+}
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
