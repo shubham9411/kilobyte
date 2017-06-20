@@ -109,12 +109,20 @@ body{
 .short-intro{
 	font-family: 'Francois One', sans-serif;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
 	.tagline{
 		font-size: 3.5em;
 	}
 	.short-intro{
 		font-size: 1.2em;
+	}
+	.blogc{
+		width: 85% !important;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 992px) {
+	.blogc{
+		width: 45% !important;
 	}
 }
 
@@ -156,11 +164,12 @@ body{
 }
 
 .blogc{
-	padding-top: 3px;
+	padding:0;
 	height: 410px;
 	margin-bottom: 20px;
+	width: 31%;
+	margin-left: 1.5em;
 }
-
 
 #main{
 	font-size: 1.3em;
@@ -225,4 +234,7 @@ body{
 .case-study-content{
 	padding: 1em 1.7em;
 	font-size: 1.4em;
+}
+.blog-detail{
+	padding-left: 1em;
 }
