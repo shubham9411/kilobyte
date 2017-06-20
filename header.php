@@ -15,7 +15,9 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-
+<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Francois+One|Oswald:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
 <?php wp_head(); ?>
 </head>
 
@@ -29,7 +31,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<img src="<?php echo get_stylesheet_directory_uri().'/img/logo.png';?>" class="img-responsive logo-image">
+			<a href="<?php echo bloginfo( 'url' ); ?>"><img src="<?php echo get_stylesheet_directory_uri().'/img/logo.png';?>" class="img-responsive logo-image"></a>
 		</div>
 		<div id="top-menu" class="navbar-collapse collapse navbar-right">
 			<?php

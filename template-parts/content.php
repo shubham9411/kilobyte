@@ -21,6 +21,7 @@
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php kilobyte_posted_on(); ?>
+			<hr />
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
@@ -49,6 +50,8 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
+		<hr />
 		<?php kilobyte_entry_footer(); ?>
+		<hr />
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
