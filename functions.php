@@ -69,6 +69,8 @@ function kilobyte_setup() {
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
+
+	add_image_size( 'blog-thumbnail', 500, 300, true );
 }
 endif;
 add_action( 'after_setup_theme', 'kilobyte_setup' );
@@ -107,11 +109,13 @@ add_action( 'widgets_init', 'kilobyte_widgets_init' );
  * Enqueue scripts and styles.
  */
 function kilobyte_scripts() {
-	wp_enqueue_style( 'kilobyte-bootstrap', get_template_directory_uri() . '/css/bootstrap.css' );
+	wp_enqueue_style( 'kilobyte-bootstrap-css', get_template_directory_uri() . '/css/bootstrap.css' );
 
 	wp_enqueue_style( 'kilobyte-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'kilobyte-bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array( 'jquery' ), '20151215', true );
+	wp_enqueue_script( 'kilobyte-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.js', array( 'jquery', 'masonry' ), '20151215', true );
+
+	wp_enqueue_script( 'kilobyte-main', get_template_directory_uri() . '/js/main.js', array( 'kilobyte-bootstrap-js' ), '1.0', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
