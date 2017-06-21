@@ -105,13 +105,11 @@ h6 {
 
 .tagline{
 	font-size: 6em;
-	font-weight: bold;
 	text-align: left;
 	font-family: 'Anton', sans-serif;
 }
 
 .start-btn button{
-	float:left;
 	margin-top: 1.5em;
 	border:none;
 	border-radius: 25px;
@@ -179,10 +177,26 @@ h6 {
 	margin-left: 1.5em;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 767px) {
 	.blogc{
 		height: 350px;
 		padding: 20px;
+	}
+	.navbar-nav > li > a:before{
+		height: 0px;
+	}
+	.navbar-nav{
+		text-align: center;
+	}
+	.navbar-nav > li{
+		border-bottom:1px solid #e7e7e7;
+	}
+	.main-image{
+		margin-top:40px;
+		text-align: center;
+	}
+	.tagline,.short-intro,.start-btn{
+		text-align: center;
 	}
 }
 
@@ -296,6 +310,9 @@ h6 {
 	.port-meta .head{
 		font-size: 36px;
 	}
+	.main-image{
+		margin-top:40px;
+	}
 }
 
 @media only screen and (max-width: 360px) {
@@ -307,4 +324,5 @@ h6 {
 	.port-meta .head{
 		font-size: 20px;
 	}
+	
 }
