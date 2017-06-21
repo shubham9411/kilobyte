@@ -19,7 +19,7 @@ get_header(); ?>
 		<div class="col-sm-6">
 			<h1 class="tagline">TECH FOR YOUR <br>BUSINESS</h1>
 
-			<h3 class="short-intro">We are a digital agency that focused on solve problems through technology.
+			<h3 class="short-intro">We are a digital agency that is focused on solving problems through technology.
 			</h3>
 		<div class="start-btn">
 			<button class="input-lg">GET STARTED</button>

@@ -81,6 +81,14 @@ h6 {
   transform: scaleX(1);
 }
 
+@media only screen and (max-width: 700px) 
+{
+	.navbar-nav > li:last-child {
+		
+		text-align: center;
+	}
+}
+
 .navbar-nav > li > a:before {
   content: "";
   position: absolute;
