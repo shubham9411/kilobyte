@@ -16,7 +16,7 @@ get_header(); ?>
 	<div class="hero-part">
 		<div class="container">
 		<div class="row">
-		<div class="col-sm-6">
+		<div class="col-md-6 col-sm-6 col-xs-12">
 			<h1 class="tagline">TECH FOR YOUR <br>BUSINESS</h1>
 
 			<h3 class="short-intro">We are a digital agency that is focused on solving problems through technology.
@@ -25,11 +25,11 @@ get_header(); ?>
 			<button class="input-lg">GET STARTED</button>
 		</div>
 		</div>
-	<div class="col-sm-6">
-	<img src="<?php echo get_stylesheet_directory_uri().'/img/1.png';?>" class="img-responsive">
-	</div>
-	</div>
-	</div>
+		<div class="col-md-6 col-sm-6 col-xs-12 main-image">
+		<img src="<?php echo get_stylesheet_directory_uri().'/img/1.png';?>" class="img-responsive">
+		</div>
+		</div>
+		</div>
 	</div>
 <?php
 get_footer();
