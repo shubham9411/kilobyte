@@ -29,5 +29,39 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+
+<!-- testimonials -->
+ 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  	<h2>Testimonials</h2>
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        "lorem ipsum"
+        <br><strong>-name</strong>
+      </div>
+
+      <div class="item">
+        "hello world"
+        <br><strong>-name</strong>
+
+      </div>
+    
+      <div class="item">
+        "hello there"
+        <br><strong>-name</strong>
+
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+  </div>
 <?php
 get_footer();

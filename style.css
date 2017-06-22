@@ -328,3 +328,22 @@ h6 {
 	}
 	
 }
+
+/*testimonials*/
+#myCarousel{
+	text-align: center;	
+	margin: 20px 0px 20px 0px;
+	background: #aea3ff;
+	padding: 10px;
+}
+
+.carousel-inner>.item{
+    height: 100px;
+    font-size: 20px;
+    font-family: 'Francois One', sans-serif;
+    padding: 10px;
+}
+
+#myCarousel{ 
+	
+}
