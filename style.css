@@ -203,14 +203,13 @@ h6 {
 		text-align: center;
 	}
 	.port-meta{
-	visibility: visible;
-	opacity: .7;
-	background: black;
-	color:white;
+		visibility: visible;
+		opacity: .8;
+		background: black;
+		color:white;
 	}
 
 }
-
 
 @media screen and (max-width: 480px) {
 	.blogc{
