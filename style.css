@@ -81,6 +81,14 @@ h6 {
   transform: scaleX(1);
 }
 
+@media only screen and (max-width: 700px) 
+{
+	.navbar-nav > li:last-child {
+		
+		text-align: center;
+	}
+}
+
 .navbar-nav > li > a:before {
   content: "";
   position: absolute;
@@ -171,17 +179,13 @@ h6 {
 }
 .blogc{
 	padding:0;
-	height: 410px;
+	height: auto;
 	margin-bottom: 20px;
 	width: 31%;
 	margin-left: 1.5em;
 }
 
 @media screen and (max-width: 767px) {
-	.blogc{
-		height: 350px;
-		padding: 20px;
-	}
 	.navbar-nav > li > a:before{
 		height: 0px;
 	}
@@ -207,9 +211,7 @@ h6 {
 
 @media screen and (max-width: 480px) {
 	.blogc{
-		height: auto;
 		width: 100%;
-		padding: 20px;
 	}
 }
 
@@ -278,7 +280,7 @@ h6 {
 	font-size: 1.4em;
 }
 .blog-detail{
-	padding-left: 1em;
+	padding: 1em;
 	font-size: 1.2em;
 }
 .contact-details{
@@ -321,7 +323,7 @@ h6 {
 		font-size: 1.2em;
 	}
 	.blogc{
-		width: 85% !important;
+		width: 85%;
 	}
 	.contact-details form input[type="submit"]{
 	margin-left: 60%;
@@ -330,7 +332,7 @@ h6 {
 }
 @media only screen and (min-width: 480px) and (max-width: 992px) {
 	.blogc{
-		width: 45% !important;
+		width: 45%;
 	}
 	.port-meta{
 		padding: 10px;
@@ -367,5 +369,24 @@ h6 {
 	.port-meta .head{
 		font-size: 20px;
 	}
+	
+}
+
+/*testimonials*/
+#myCarousel{
+	text-align: center;	
+	margin: 20px 0px 20px 0px;
+	background: #aea3ff;
+	padding: 10px;
+}
+
+.carousel-inner>.item{
+    height: 100px;
+    font-size: 20px;
+    font-family: 'Francois One', sans-serif;
+    padding: 10px;
+}
+
+#myCarousel{ 
 	
 }
