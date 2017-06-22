@@ -18,6 +18,7 @@
 <link href="https://fonts.googleapis.com/css?family=Francois+One|Oswald:300" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Nova+Mono|Share+Tech+Mono" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 <?php wp_head(); ?>
 </head>
 

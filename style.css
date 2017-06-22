@@ -198,6 +198,10 @@ h6 {
 	.tagline,.short-intro,.start-btn{
 		text-align: center;
 	}
+	.get-intouch{
+		margin-top: 80px;
+	}
+
 }
 
 
@@ -277,6 +281,38 @@ h6 {
 	padding-left: 1em;
 	font-size: 1.2em;
 }
+.contact-details{
+	margin-top: 50px;
+	padding-top: 20px;
+}
+.map iframe{
+	pointer-events: none;
+}
+.map iframe.clicked{
+	pointer-events: auto;
+}
+.contact-details form input[type="text"]{
+	width: 80%;
+}
+.contact-details form input[type="submit"]{
+	margin-left: 69%;
+	margin-top: 15px;
+}
+.contact-details form input[type="text"],.contact-details form textarea{
+	border:none;
+	outline: none;
+	background: none;
+	border-bottom:2px solid black;
+	border-radius: 0px;
+	margin-top: 20px;
+}
+.contact-details form textarea{
+	width: 80%;
+	height: 130px;
+}
+.get-intouch{
+		padding-left: 13%;
+}
 @media only screen and (max-width: 480px) {
 	.tagline{
 		font-size: 3.5em;
@@ -287,6 +323,10 @@ h6 {
 	.blogc{
 		width: 85% !important;
 	}
+	.contact-details form input[type="submit"]{
+	margin-left: 60%;
+	}
+
 }
 @media only screen and (min-width: 480px) and (max-width: 992px) {
 	.blogc{
@@ -312,6 +352,9 @@ h6 {
 	}
 	.main-image{
 		margin-top:40px;
+	}
+	.map iframe{
+		height: 300px;
 	}
 }
 
