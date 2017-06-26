@@ -84,7 +84,6 @@ h6 {
 @media only screen and (max-width: 700px) 
 {
 	.navbar-nav > li:last-child {
-		
 		text-align: center;
 	}
 }
@@ -106,7 +105,7 @@ h6 {
 
 .menu-bar > li > a{
 	font-size: 1.3em;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Share Tech Mono', sans-serif;
 	font-style: normal;
 	transition: .5s;
 }
