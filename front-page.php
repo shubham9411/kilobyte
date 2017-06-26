@@ -12,7 +12,7 @@
 * @package kilobyte
 */
 get_header(); ?>
-<div class="hero-part">
+<div class="hero-part container ">
 		<div class="row">
 			<div class="col-sm-6">
 				<h1 class="tagline">TECH FOR YOUR <br>BUSINESS</h1>
