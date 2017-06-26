@@ -422,7 +422,7 @@ h6 {
 }
 
 /*contact form*/
-.contact-details form input[type="text"], input[type="email"]{
+.contact-details input[type="text"], input[type="email"]{
     top: -.35em;
     border: none;
     background: rgba(140,140,140,.2);
@@ -449,7 +449,7 @@ input:focus{
 	font-size: 2em;
 }
 
-.contact-details form {
+.contact-details {
     line-height: 3.75em;
     font-size: 1.5em;
     padding: 0% 25%;
