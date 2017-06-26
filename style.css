@@ -111,7 +111,12 @@ h6 {
 	transition: .5s;
 }
 
+.tagline,.short-intro,.start-btn{
+	margin-left:30px;
+}
+
 .tagline{
+	margin-top: -40px;
 	font-size: 6em;
 	text-align: left;
 	font-family: 'Anton', sans-serif;
@@ -201,6 +206,7 @@ h6 {
 	}
 	.tagline,.short-intro,.start-btn{
 		text-align: center;
+		margin: 0px;
 	}
 	.port-meta{
 		visibility: visible;
@@ -349,3 +355,59 @@ h6 {
     font-family: 'Francois One', sans-serif;
 }
 
+/*image animation*/
+
+.animate-me{
+	animation: dframe 3s ease-in-out 0s 1;
+	position: relative;
+}
+.animate-me>img{
+	transform:skewY(20deg);
+}
+
+.c{	
+	display: flex;
+	position: absolute;
+  	top: 16%;
+  	right: 45%;
+  	opacity: .8;
+  	font-size: 1.5em;
+  	font-weight: bold;
+  	color:#999;
+}
+
+@keyframes dframe{
+  0%{
+      opacity: 0}
+  50%{
+      opacity: .5}
+  100%{
+      opacity: 1}
+}
+
+.typewriter p{
+  color:rgba(71, 48, 84, 0.73);
+  overflow: hidden; 
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3s steps(30, end) 3s,
+    blink-caret .5s step-end 3s infinite;  
+}
+
+.typewriter{
+  transform: skewY(20deg);
+  opacity:0;
+	}
+
+@keyframes typing {
+  from { width: 0% }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}

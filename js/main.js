@@ -3,6 +3,10 @@ jQuery('.grid').masonry({
 	horizontalOrder: true,
 });
 
+setTimeout(function(){
+  jQuery(".typewriter").css("opacity","1");
+},3500);
+
 // google-analytics
 
 // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
