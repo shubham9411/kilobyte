@@ -618,11 +618,7 @@ input:focus{
 	margin: 2px;
 	transition: .2s;
 }
-.blogs-more{
-	width: auto;
-	background-color: white;
-	margin:50px 10px 180px 0px;
-}
+
 /*teampage*/
 .team .member	{
 text-align: center;

@@ -41,7 +41,6 @@ get_header(); ?>
 </div>
 
 <!-- blogs -->
-<div class="blogs-more">
 <div class="row grid">
   <?php
   $args = array('post_type' => 'post','posts_per_page' => 3  );
