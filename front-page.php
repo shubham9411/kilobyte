@@ -22,7 +22,15 @@ get_header(); ?>
 				<div class="start-btn">
 					<button class="input-lg">GET STARTED</button>
 				</div>
-			</div>
+        <div class='cube'>
+          <div class='cube__face'></div>
+          <div class='cube__face'></div>
+          <div class='cube__face'></div>
+          <div class='cube__face'></div>
+          <div class='cube__face'></div>
+          <div class='cube__face'></div>
+        </div>
+        </div>
 			<div class="col-sm-6 animate-me">
 				<img src="<?php echo get_stylesheet_directory_uri().'/img/1.png';?>" class=" img-responsive">
         <div class="c">
@@ -34,7 +42,6 @@ get_header(); ?>
 
 <!-- blogs -->
 <div class="blogs-more">
-  <a href="a.com"><h1 style="float: right;">See more</h1></a></div>
 <div class="row grid">
   <?php
   $args = array('post_type' => 'post','posts_per_page' => 3  );
@@ -53,16 +60,19 @@ get_header(); ?>
   wp_reset_postdata();
   ?>
   </div>
+<a href="a.com"><h1 style="float: right;">See more<h1></h1></a></div>
+</div>
 
 <!-- portfolio-->
-<div class="row">
-<?php
-$args = array(
-  'post_type'   => 'post-type-portfolio','posts_per_page' => 2);
-$loop = new WP_Query( $args );
-if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();
-  // echo get_post_meta($post->ID, 'sub_heading', true);
-  ?>
+<div class="container">
+   <div class="portfolio">
+  <?php
+  $args = array(
+    'post_type'   => 'post-type-portfolio','posts_per_page' => 2);
+  $loop = new WP_Query( $args );
+  if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();
+    // echo get_post_meta($post->ID, 'sub_heading', true);
+    ?>
   <div class="col-md-6 col-xs-12 col-sm-6">
     <div class="wrap card">
       <a href="<?php the_permalink();?>">
@@ -78,6 +88,7 @@ if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();
   endwhile;
 endif;
 ?>
+</div>
 </div>
 <?php
 get_footer();
