@@ -1,8 +1,7 @@
 <?php
 /*
 Template Name: Portfolio
- */
-
+*/
 get_header();
 ?>
 <div class="container portfolio">

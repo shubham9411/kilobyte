@@ -12,7 +12,8 @@
 * @package kilobyte
 */
 get_header(); ?>
-<div class="hero-part container ">
+<div class="container">
+<div class="hero-part">
 		<div class="row">
 			<div class="col-sm-6">
 				<h1 class="tagline">TECH FOR YOUR <br>BUSINESS</h1>
@@ -31,38 +32,52 @@ get_header(); ?>
 		</div>
 </div>
 
-<!-- testimonials -->
- 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  	<h2>Testimonials</h2>
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        "lorem ipsum"
-        <br><strong>-name</strong>
-      </div>
-
-      <div class="item">
-        "hello world"
-        <br><strong>-name</strong>
-
-      </div>
-    
-      <div class="item">
-        "hello there"
-        <br><strong>-name</strong>
-
+<!-- blogs -->
+<div class="blogs-more">
+  <a href="a.com"><h1 style="float: right;">See more<h1></h1></a></div>
+<div class="row grid">
+  <?php
+  $args = array('post_type' => 'post','posts_per_page' => 3  );
+  $loop = new WP_Query($args);
+  if($loop->have_posts()):
+    while ($loop->have_posts()): $loop->the_post(); ?>
+    <div class="card col-md-4 col-sm-6 col-xs-12 blogc" onclick="window.location = '<?php the_permalink(); ?>';">
+      <div class="blog-detail blog-featured">
+        <h1><?php the_title();?></h1>
+        <?php the_excerpt();?>
       </div>
     </div>
-
-    <!-- Left and right controls -->
+    <?php
+    endwhile;
+  endif;
+  wp_reset_postdata();
+  ?>
   </div>
+</div>
+<!-- portfolio-->
+ <div class="portfolio">
+<?php
+$args = array(
+  'post_type'   => 'post-type-portfolio','posts_per_page' => 2);
+$loop = new WP_Query( $args );
+if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();
+  // echo get_post_meta($post->ID, 'sub_heading', true);
+  ?>
+  <div class="col-md-6 col-xs-12 col-sm-6">
+    <div class="wrap card">
+      <a href="<?php the_permalink();?>">
+      <?php the_post_thumbnail( 'portifolio-thumbnail', 'class=img-responsive' ); ?>
+      <div class="port-meta">
+        <h3 class="head"><?php the_title();?></h3>
+        <p class="bodytext"><?php echo get_post_meta( $post->ID, 'sub_heading', true ); ?></p>
+      </div>
+      </a>
+    </div>
+  </div>
+  <?php
+  endwhile;
+endif;
+?>
+</div>
 <?php
 get_footer();
