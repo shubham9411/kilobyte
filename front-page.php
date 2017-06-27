@@ -34,7 +34,7 @@ get_header(); ?>
 
 <!-- blogs -->
 <div class="blogs-more">
-  <a href="a.com"><h1 style="float: right;">See more<h1></h1></a></div>
+  <a href="a.com"><h1 style="float: right;">See more</h1></a></div>
 <div class="row grid">
   <?php
   $args = array('post_type' => 'post','posts_per_page' => 3  );
@@ -53,9 +53,9 @@ get_header(); ?>
   wp_reset_postdata();
   ?>
   </div>
-</div>
+
 <!-- portfolio-->
- <div class="portfolio">
+<div class="row">
 <?php
 $args = array(
   'post_type'   => 'post-type-portfolio','posts_per_page' => 2);
