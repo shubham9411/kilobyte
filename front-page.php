@@ -60,8 +60,7 @@ get_header(); ?>
   wp_reset_postdata();
   ?>
   </div>
-  <a href="a.com"><h1 style="float: right;">See more<h1></h1></a></div>
-
+  <a href="a.com"><h1 style="float: right;">See more<h1></h1></a>
 </div>
 <!-- portfolio-->
 <div class="container">
