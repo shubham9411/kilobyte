@@ -24,6 +24,7 @@
 			kilobyte_posted_on(); ?>
 		</div> -->
 		<!-- .entry-meta -->
+
 		<?php
 		endif; ?>
 		<hr />
@@ -54,6 +55,7 @@
 	<footer class="entry-footer">
 		<hr />
 		<?php kilobyte_entry_footer(); ?>
+		<?php kilobyte_posted_on(); ?>
 		<hr />
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

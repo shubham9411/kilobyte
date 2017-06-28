@@ -41,6 +41,7 @@ get_header(); ?>
 </div>
 
 <!-- blogs -->
+<div class="blogs-more">
 <div class="row grid">
   <?php
   $args = array('post_type' => 'post','posts_per_page' => 3  );
@@ -64,7 +65,7 @@ get_header(); ?>
 
 <!-- portfolio-->
 <div class="container">
-   <div class="portfolio">
+   <div class="">
   <?php
   $args = array(
     'post_type'   => 'post-type-portfolio','posts_per_page' => 2);
@@ -87,6 +88,7 @@ get_header(); ?>
   endwhile;
 endif;
 ?>
+  <a href="<?php echo the_permalink(get_page_by_title('Work'));?>"><h1 style="float: right;">See more</h1></a>
 </div>
 </div>
 <?php
