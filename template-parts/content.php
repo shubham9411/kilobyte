@@ -19,9 +19,11 @@
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php kilobyte_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		<!-- <div class="entry-meta">
+			<?php 
+			kilobyte_posted_on(); ?>
+		</div> -->
+		<!-- .entry-meta -->
 		<?php
 		endif; ?>
 		<hr />
