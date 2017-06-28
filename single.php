@@ -8,23 +8,18 @@
  */
 
 get_header(); ?>
+
 	<div id="primary" class="content-area container">
 		<main id="main" class="site-main col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" role="main">
-		<?php 
+
+		<?php
 		while ( have_posts() ) : the_post();
+
 			get_template_part( 'template-parts/content', get_post_format() );
+
 			// the_post_navigation();
+
 			// If comments are open or we have at least one comment, load up the comment template.
-			global $post;
-			$post_id = $post->post_author;
-			?><div class="gravtar-img"><?php echo get_avatar( $post_id, 100); 
-			?><br><br> 
-			<div class="entry-meta"><?php 
-			kilobyte_posted_on(); ?>
-				</div>
-			</div> 
-			<hr>
-			<?php
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
 			endif;

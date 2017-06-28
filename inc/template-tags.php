@@ -23,7 +23,7 @@ function kilobyte_posted_on() {
 		esc_html_x( ' on %s', 'post date', 'kilobyte' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
-	if( ! is_home()) {
+	if( ! is_home() ) {
 		global $post;
 		$post_id = $post->post_author;
 		$byline = sprintf(

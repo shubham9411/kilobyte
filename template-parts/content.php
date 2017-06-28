@@ -19,12 +19,18 @@
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
+<<<<<<< HEAD
 		<!-- <div class="entry-meta">
 			<?php 
 			kilobyte_posted_on(); ?>
 		</div> -->
 		<!-- .entry-meta -->
 
+=======
+		<div class="entry-meta">
+			<?php kilobyte_posted_on(); ?>
+		</div><!-- .entry-meta -->
+>>>>>>> parent of e8ffb3b... changes added
 		<?php
 		endif; ?>
 		<hr />

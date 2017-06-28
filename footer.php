@@ -15,4 +15,10 @@
 		<h2>Hello</h2>
 	</footer>
 </body>
+<<<<<<< HEAD
+=======
+<div class="foot">
+	
+</div>
+>>>>>>> parent of e8ffb3b... changes added
 </html>
