@@ -29,17 +29,18 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	<br>
 	<div class="prev-next">
-                <?php
-                $next_post = get_next_post();
-                if (!empty( $next_post )): ?>
-                      <a href="<?php echo esc_url( get_permalink( $next_post->ID ) ); ?>"><button class="btn-sm btn-prev">PREV</button></a>
-                <?php endif; ?>
-                <?php
-                $prev_post = get_previous_post();
-                if (!empty( $prev_post )): ?>
-                  <a href="<?php echo $prev_post->guid ?>"><button class="btn-sm btn-next">NEXT</button></a>
-                <?php endif ?>
-            </div>
+        <?php
+        $next_post = get_next_post();
+        if (!empty( $next_post )): ?>
+              <a href="<?php echo esc_url( get_permalink( $next_post->ID ) ); ?>" class="btn-prev"><i class="fa fa-arrow-left "></i> <em><?php echo $next_post->post_title ?></em></a>
+        <?php endif; ?>
+        <?php
+        $prev_post = get_previous_post();
+        if (!empty( $prev_post )): ?>
+          <a href="<?php echo $prev_post->guid ?>" class="btn-next"><em><?php echo $prev_post->post_title ?></em> <i class="fa fa-arrow-right"></i></a>
+        <?php endif ?>
+    </div>
 <?php
 get_footer();

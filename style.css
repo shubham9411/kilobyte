@@ -226,6 +226,7 @@ html{
     bottom: -9em;
     height: 100px;
     width: 100%;
+    color: white;
 }
 
 .get-intouch{
@@ -296,10 +297,20 @@ html{
 }
  .btn-prev{
 	margin-left: 9%;
+	font-size: 20px;
+	color: black;
+	font-weight: bold;
+}
+a:hover{
+	text-decoration: none;
 }
 .btn-next{
 	float: right;
 	margin-right: 9%;
+	font-size: 20px;
+	color: black;
+	font-weight: bold;
+
 }
 @keyframes ani {
   to {
