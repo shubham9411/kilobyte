@@ -59,9 +59,11 @@ get_header(); ?>
   wp_reset_postdata();
   ?>
   </div>
+
   <a href="<?php echo the_permalink(get_page_by_title('Blogs'));?>"><h1 style="float: right;">See more</h1></a>
   </div>
   <br>
+
 <!-- portfolio-->
 <div class="container">
    <div class="">

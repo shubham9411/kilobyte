@@ -14,6 +14,7 @@ if ( ! function_exists( 'kilobyte_posted_on' ) ) :
 function kilobyte_posted_on() {
 	?>
 	<div class="row">
+	<br>
 		<div class="col-md-6">
 			<div class="avatar"><?php echo get_avatar( get_the_author_meta( 'ID' ), 80 );?></div>
 		</div>
