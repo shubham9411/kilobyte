@@ -42,7 +42,6 @@ get_header(); ?>
 
 <!-- blogs -->
 <div class="blogs-more">
-<div class="row grid">
   <?php
   $args = array('post_type' => 'post','posts_per_page' => 3  );
   $loop = new WP_Query($args);
@@ -61,7 +60,6 @@ get_header(); ?>
   ?>
   </div>
   <a href="<?php echo the_permalink(get_page_by_title('Blogs'));?>"><h1 style="float: right;">See more</h1></a>
-  </div>
   </div>
   <br>
 <!-- portfolio-->

@@ -31,8 +31,24 @@ h5,
 h6 {
 	font-family: 'Francois One', sans-serif;
 }
-.contact-head,.grid,.portfolio,.hero-part,.case-studies{
-	margin-top: 10%;
+.hero-part,.portfolio,.case-studies,#main,.grid,.contact-head{
+	padding-top: 10%;
+}
+#single-team{
+	padding-top: 8%;
+}
+.row{
+	width: 100%;
+}
+.member-image{
+	width: 220px;
+	height: 200px;
+	background-color: white;
+}
+.member-cover{
+	background-image: url("img/cover.jpg");
+	padding:40px 0px 40px 60px;
+	color: white;
 }
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
@@ -218,9 +234,11 @@ html{
 [class*='cube'] {
   position: absolute;
 }
-
+.avatar{
+	border-radius: 100%;
+}
 .cube {
-  top: 140%;
+  top: 130%;
   left:25%;
   text-align: center;
   color: white;
@@ -276,7 +294,13 @@ html{
   --ga: 221deg;
   --gs: #ffecd2, #fcb69f;
 }
-
+ .btn-prev{
+	margin-left: 9%;
+}
+.btn-next{
+	float: right;
+	margin-right: 9%;
+}
 @keyframes ani {
   to {
     transform: rotate3d(1, 1, 1, 1turn) rotate3d(1, -1, 1, 1turn);
