@@ -12,34 +12,45 @@ if ( ! function_exists( 'kilobyte_posted_on' ) ) :
  * Prints HTML with meta information for the current post-date/time and author.
  */
 function kilobyte_posted_on() {
-	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+	?>
+	<div class="row">
+	<br>
+		<div class="col-md-6">
+			<div class="avatar"><?php echo get_avatar( get_the_author_meta( 'ID' ), 80 );?></div>
+		</div>
+		<div class="col-md-6" style="padding-top: 25px;">
+		<?php
+		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 
-	$time_string = sprintf( $time_string,
-		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date() )
-	);
-
-	$posted_on = sprintf(
-		esc_html_x( ' on %s', 'post date', 'kilobyte' ),
-		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
-	);
-	if( ! is_home() ) {
-		global $post;
-		$post_id = $post->post_author;
-		$byline = sprintf(
-			esc_html_x( 'Posted by %s', 'post author', 'kilobyte' ),
-			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( $post_id ) ) . '">' . esc_html( get_the_author_meta( 'display_name', $post_id ) ) . '</a></span>'
+		$time_string = sprintf( $time_string,
+			esc_attr( get_the_date( 'c' ) ),
+			esc_html( get_the_date() )
 		);
-	} else {
-		$byline = sprintf(
-			esc_html_x( 'Posted by %s', 'post author', 'kilobyte' ),
-			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
-		);
-	}
-	if ( ! is_page() ) {
-		echo $byline . $posted_on ; // WPCS: XSS OK.
-	}
 
+		$posted_on = sprintf(
+			esc_html_x( ' on %s', 'post date', 'kilobyte' ),
+			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+		);
+		if( ! is_home() ) {
+			global $post;
+			$post_id = $post->post_author;
+			$byline = sprintf(
+				esc_html_x( 'Posted by %s', 'post author', 'kilobyte' ),
+				'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( $post_id ) ) . '">' . esc_html( get_the_author_meta( 'display_name', $post_id ) ) . '</a></span>'
+			);
+		} else {
+			$byline = sprintf(
+				esc_html_x( 'Posted by %s', 'post author', 'kilobyte' ),
+				'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+			);
+		}
+		if ( ! is_page() ) {
+			echo $byline . $posted_on ; // WPCS: XSS OK.
+		}
+		?>
+		</div>
+	</div>
+	<?php
 }
 endif;
 
