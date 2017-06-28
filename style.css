@@ -291,17 +291,12 @@ html{
     transform: rotate3d(1, 1, 1, 1turn) rotate3d(1, -1, 1, 1turn);
   }
 }
-@media screen and (max-width: 1200px){
-	.cube{
-		display: none;
-	}
-}
+
 @media screen and (max-width: 992px) and (min-width: 766px){
 	.animate-me .c{
 		top: 28%;
 		right: 35%;
 	}
-
 }
 @media screen and (max-width: 767px) {
 	.navbar-nav > li > a:before{

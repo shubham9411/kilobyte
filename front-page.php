@@ -60,7 +60,12 @@ get_header(); ?>
   wp_reset_postdata();
   ?>
   </div>
+<<<<<<< HEAD
 <a href="a.com"><h1 style="float: right;">See more<h1></h1></a></div>
+=======
+  <a href="a.com"><h1 style="float: right;">See more<h1></h1></a></div>
+
+>>>>>>> parent of 1acc9eb... portfolio
 </div>
 
 <!-- portfolio-->
