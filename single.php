@@ -29,7 +29,6 @@ get_header(); ?>
 				  <a href="<?php echo $prev_post->guid ?>"><i class="fa fa-arrow-right"></i></a>
 				<?php endif ?>
 			</div>
-			<br>
 			<?php if ( comments_open() || get_comments_number() ) :
 				comments_template();
 			endif;
