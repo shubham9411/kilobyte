@@ -60,11 +60,13 @@ get_header(); ?>
   wp_reset_postdata();
   ?>
   </div>
-  <a href="a.com"><h1 style="float: right;">See more<h1></h1></a>
-</div>
+  <a href="<?php echo the_permalink(get_page_by_title('Blogs'));?>"><h1 style="float: right;">See more</h1></a>
+  </div>
+  </div>
+  <br>
 <!-- portfolio-->
 <div class="container">
-   <div class="portfolio">
+   <div class="">
   <?php
   $args = array(
     'post_type'   => 'post-type-portfolio','posts_per_page' => 2);
@@ -87,6 +89,7 @@ get_header(); ?>
   endwhile;
 endif;
 ?>
+  <a href="<?php echo the_permalink(get_page_by_title('Work'));?>"><h1 style="float: right;">See more</h1></a>
 </div>
 </div>
 <?php

@@ -31,7 +31,9 @@ h5,
 h6 {
 	font-family: 'Francois One', sans-serif;
 }
-
+.contact-head,.grid,.portfolio,.hero-part,.case-studies{
+	margin-top: 10%;
+}
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
@@ -74,10 +76,10 @@ h6 {
 #site-header-nav{
 	padding-top: 0.3em;
 	border: none;
-	/*position: fixed;*/
+	position: fixed;
 	background-color: white;
-	/*z-index: 3;*/
-	width: 100%
+	z-index: 1;
+	width: 100%;
 }
 
 .navbar-nav > li > a:hover:before {
@@ -85,7 +87,17 @@ h6 {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-
+.prev-next .fa-arrow-right{
+	float: right;
+	margin-right: 40px;
+	font-size:30px;
+	color: black;
+}
+.prev-next .fa-arrow-left{
+	margin-left: 40px;
+	font-size:30px;
+	color: black;
+}
 @media only screen and (max-width: 700px) 
 {
 	.navbar-nav > li:last-child {
@@ -190,6 +202,10 @@ h6 {
 .wrap.card img{
 	width: 100%;
 }
+html{
+  position:relative; 
+  min-height: 100%;
+}
 
 .blogc{
 	padding:0;
@@ -198,13 +214,16 @@ h6 {
 	width: 31%;
 	margin-left: 1.5em;
 }
-
-.foot{
-	height: 100px;
+.footer{
 	background-color: black;
-	margin-top: 3em;
+	position: absolute;
+    bottom: -9em;
+    height: 100px;
+    width: 100%;
 }
-
+.get-intouch{
+	padding-left: 10%;
+}
 [class*='cube'] {
   position: absolute;
 }
@@ -623,11 +642,7 @@ input:focus{
 	margin: 2px;
 	transition: .2s;
 }
-.blogs-more{
-	width: auto;
-	background-color: white;
-	margin:50px 10px 180px 0px;
-}
+
 /*teampage*/
 .team .member	{
 text-align: center;
@@ -651,4 +666,8 @@ border-radius: 50%;
 	border-left: 1px solid #999;
 	border-right: 1px solid #999;
 	padding: 2px;
+}
+.foot{
+	background-color: black;
+	height: 100px;
 }
