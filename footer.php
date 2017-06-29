@@ -20,11 +20,11 @@
 				<div class="col-md-4 col-sm-5">
 					<div class="social-contact">
 						<h4>STAY CONNECTED WITH US</h4>
-						<a href=""><img src="<?php echo get_stylesheet_directory_uri().'/img/facebook.png';?>"></a>
-						<a href=""><img src="<?php echo get_stylesheet_directory_uri().'/img/linkedin.png';?>"></a>
+						<a href="https://www.facebook.com/kbtech.co/"><img src="<?php echo get_stylesheet_directory_uri().'/img/facebook.png';?>"></a>
+						<a href="https://www.linkedin.com/company-beta/17982982/"><img src="<?php echo get_stylesheet_directory_uri().'/img/linkedin.png';?>"></a>
 						<a href=""><img src="<?php echo get_stylesheet_directory_uri().'/img/twitter.png';?>"></a>
 						<br>
-						<a href=""><img src="<?php echo get_stylesheet_directory_uri().'/img/instagram.png';?>"></a>
+						<a href="https://www.instagram.com/kilobytetech/?hl=en"><img src="<?php echo get_stylesheet_directory_uri().'/img/instagram.png';?>"></a>
 						<a href=""><img src="<?php echo get_stylesheet_directory_uri().'/img/google-plus.png';?>"></a>
 					</div>
 				</div>
