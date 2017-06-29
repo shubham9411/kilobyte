@@ -17,11 +17,11 @@ get_header();
 			<div class="col-md-6 col-xs-12 col-sm-6">
 				<div class="wrap card">
 					<a href="<?php the_permalink();?>">
-					<?php the_post_thumbnail( 'portifolio-thumbnail', 'class=img-responsive' ); ?>
 					<div class="port-meta">
 						<h3 class="head"><?php the_title();?></h3>
 						<p class="bodytext"><?php echo get_post_meta( $post->ID, 'sub_heading', true ); ?></p>
 					</div>
+					<?php the_post_thumbnail( 'portifolio-thumbnail', 'class=img-responsive' ); ?>
 					</a>
 				</div>
 			</div>

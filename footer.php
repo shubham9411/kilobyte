@@ -17,18 +17,18 @@
 				<div class="col-md-4 col-sm-4">
 				
 				</div>
-				<div class="col-md-5 col-sm-5">
+				<div class="col-md-4 col-sm-5">
 					<div class="social-contact">
 						<h4>STAY CONNECTED WITH US</h4>
-						<a href=""><i class="fa fa-facebook"></i></a>
-						<a href=""><i class="fa fa-linkedin"></i></a>
-						<a href=""><i class="fa fa-twitter"></i></a>
+						<a href=""><img src="<?php echo get_stylesheet_directory_uri().'/img/facebook.png';?>"></a>
+						<a href=""><img src="<?php echo get_stylesheet_directory_uri().'/img/linkedin.png';?>"></a>
+						<a href=""><img src="<?php echo get_stylesheet_directory_uri().'/img/twitter.png';?>"></a>
 						<br>
-						<a href=""><i class="fa fa-instagram"></i></a>
-						<a href=""><i class="fa fa-google"></i></a>
+						<a href=""><img src="<?php echo get_stylesheet_directory_uri().'/img/instagram.png';?>"></a>
+						<a href=""><img src="<?php echo get_stylesheet_directory_uri().'/img/google-plus.png';?>"></a>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-3">
+				<div class="col-md-4 col-sm-3">
 					<div class="address-footer">
 						<p>13,PNB Road Sector 2A, Vaishali</p>
 						<p>Ghaziabad</p>
