@@ -8,7 +8,7 @@
  */
 
 get_header(); ?>
-
+<div class="single-page">
 	<div id="primary" class="content-area container">
 		<main id="main" class="site-main col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" role="main">
 
@@ -31,7 +31,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	<br>
 	<div class="prev-next">
         <?php
         $next_post = get_next_post();
@@ -44,5 +43,6 @@ get_header(); ?>
           <a href="<?php echo $prev_post->guid ?>" class="btn-next"><em><?php echo $prev_post->post_title ?></em> <i class="fa fa-arrow-right"></i></a>
         <?php endif ?>
     </div>
+</div>
 <?php
 get_footer();
