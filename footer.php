@@ -11,9 +11,7 @@
 
 ?>
 <?php wp_footer(); ?>
-	<footer class="footer">
-		<h2>Hello</h2>
-	</footer>
+	
 </body>
 
 </html>
