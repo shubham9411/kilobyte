@@ -7,12 +7,12 @@ get_header();
 ?>
 	<div class="single-team-page" id="single-team">
 		<div class="member-cover">
-			<div class="row">
-				<div class="col-md-9">
+			<div class="row" style="width: 100%;">
+				<div class="col-md-9 col-sm-9">
 					<h1>NAME OF MEMBER</h1>
 					<h4>SHORT DISCRIPTION</h4>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-3">
 					<div ><img src="<?php echo get_stylesheet_directory_uri().'/img/male.jpg';?>" class="img-responsive img-circle member-image"></div>
 				</div>
 			</div>

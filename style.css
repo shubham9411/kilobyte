@@ -19,7 +19,9 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 */
-
+html{
+	min-height: 100%;
+}
 body{
 	font-family: Times,sans-serif;
 }
@@ -31,24 +33,30 @@ h5,
 h6 {
 	font-family: 'Francois One', sans-serif;
 }
-.hero-part,.portfolio,.case-studies,#main,.grid,.contact-head{
+.front-page,.portfolio,.case-studies,.single-page,.grid,.contact-page{
 	padding-top: 10%;
+	padding-bottom: 10%;
 }
 #single-team{
 	padding-top: 8%;
+	padding-bottom: 10%;
 }
-.row{
-	width: 100%;
+.team{
+	padding-top: 5%;
+	padding-bottom: 10%;
 }
+
 .member-image{
 	width: 220px;
-	height: 200px;
-	background-color: white;
+	height: 210px;
+	display: block;
+    margin: 0 auto;
 }
 .member-cover{
 	background-image: url("img/cover.jpg");
 	padding:40px 0px 40px 60px;
 	color: white;
+	background-size: cover;
 }
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
@@ -220,13 +228,7 @@ html{
 	width: 31%;
 	margin-left: 1.5em;
 }
-.footer{
-	background-color: black;
-	position: absolute;
-    bottom: -9em;
-    height: 100px;
-    width: 100%;
-}
+
 
 .get-intouch{
 	padding-left: 10%;
@@ -296,17 +298,34 @@ html{
 }
  .btn-prev{
 	margin-left: 9%;
+	font-size: 20px;
+	color: black;
+	font-weight: bold;
+}
+.prev-next{
+	padding-top: 60px;
+}
+a:hover{
+	text-decoration: none;
 }
 .btn-next{
 	float: right;
 	margin-right: 9%;
+	font-size: 20px;
+	color: black;
+	font-weight: bold;
+
 }
 @keyframes ani {
   to {
     transform: rotate3d(1, 1, 1, 1turn) rotate3d(1, -1, 1, 1turn);
   }
 }
-
+@media screen and (max-width: 1200px){
+	.cube{
+		display: none;
+	}
+}
 @media screen and (max-width: 992px) and (min-width: 766px){
 	.animate-me .c{
 		top: 28%;
@@ -346,6 +365,12 @@ html{
 	}
 	#site-header-nav{
 		position: relative;
+	}
+	.member-cover{
+		text-align: center;
+	}
+	.blog-featured{
+		height:auto !important;
 	}
 }
 
@@ -485,21 +510,6 @@ html{
 		font-size: 20px;
 	}
 }
-
-/*testimonials
-#myCarousel{
-	text-align: center;	
-	margin: 20px 0px 20px 0px;
-	background: #aea3ff;
-	padding: 10px;
-}
-
-.carousel-inner>.item{
-    height: 100px;
-    font-size: 20px;
-    font-family: 'Francois One', sans-serif;
-}
-
 /*frontpage image animation*/
 
 .animate-me{
@@ -655,34 +665,45 @@ input:focus{
 
 /*teampage*/
 .team .member	{
-text-align: center;
+	text-align: center;
 }
+
 .team-img{
-height:200px;
-width:200px;
-border-radius: 50%;
+	width: 270px;
+	height: 250px;	
+	display: block;
+    margin: 0 auto;
 }
-.team>h1{
+
+.team-heading{
 	text-align: center;
 	width: auto;
 	text-decoration-line: underline;
 	padding: 1em;
 }
-.member-name{
-	color:black;
-	font-size: 2em;	
-}
-.member{
-	border-left: 1px solid #999;
-	border-right: 1px solid #999;
-	padding: 2px;
-}
-.foot{
-	background-color: black;
-	height: 100px;
+.m-explore-btn{
+	border: 2px solid black;
+    background: none;
+    outline: none;
+    margin-top: 8px;
 }
 
-/*web grader*/
+/*footer*/
+
+.footer{
+	background-color:#090b1b;
+    width: 100%;
+    color: white;
+    padding: 10px 0px 20px 0px;
+    justify-content: space-around;
+}
+.social-contact{
+	text-align: center;
+}
+.address-footer{
+	margin-top: 10px;
+	float: right;
+}
 
 #e-id,#wname{
 background-color:white;
@@ -732,4 +753,10 @@ height: auto;
 }
 .green.mybox{
 	border-left:3px solid green;
+}
+.social-contact img{
+	width: 45px; 
+	height: 45px;
+	margin-left: 8px;
+	margin-top: 5px;
 }
