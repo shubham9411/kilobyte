@@ -7,7 +7,7 @@ setTimeout(function(){
   jQuery(".typewriter").css("opacity","1");
 },3500);
 
-google-analytics
+// google-analytics
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -17,4 +17,4 @@ google-analytics
   ga('create', 'UA-101475667-1', 'auto');
   ga('send', 'pageview');
 
-end google-analytics
+// end google-analytics

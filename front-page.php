@@ -33,7 +33,7 @@ get_header(); ?>
           </div>
           </div>
   			<div class="col-sm-6 animate-me">
-  				<img src="<?php echo get_stylesheet_directory_uri().'/img/1.png';?>" class=" img-responsive">
+  				<img src="<?php echo get_stylesheet_directory_uri().'/img/1.png';?>">
           <div class="c">
             <div class="typewriter"><p>Hello World!</p></div>
           </div>
@@ -90,7 +90,7 @@ get_header(); ?>
     endwhile;
   endif;
   ?>
-    <a href="<?php echo the_permalink(get_page_by_title('Work'));?>"><h1 style="float: right;">See more</h1></a>
+    <a href="<?php echo get_page_link(35); ?>"><h1 style="float: right;">See more</h1></a>
   </div>
   </div>
 </div>
