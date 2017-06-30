@@ -6,7 +6,7 @@ get_header();
 ?>
 
 <div class="container">
-<br><br><br><br><br><br>
+<div class="website-grader">
 	<div class="wg" style="text-align: center;">
 		<h1>TEST YOUR WEBSITE</h1>
 		<div class="analyze">
@@ -33,6 +33,7 @@ get_header();
 	<h2 style="text-align: center;">PERFORMANCE:</h2>
 	<div class="Performance">
 	</div>
+</div>
 </div>
 </div>
 

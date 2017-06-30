@@ -33,7 +33,7 @@ h5,
 h6 {
 	font-family: 'Francois One', sans-serif;
 }
-.front-page,.portfolio,.case-studies,.single-page,.grid,.contact-page{
+.front-page,.portfolio,.case-studies,.single-page,.grid,.contact-page,.website-grader{
 	padding-top: 10%;
 	padding-bottom: 10%;
 }
@@ -378,6 +378,9 @@ a:hover{
 	}
 	.address-footer{
 		float: none !important;
+		text-align: center;
+	}
+	.analyse-link{
 		text-align: center;
 	}
 }
@@ -765,8 +768,16 @@ height: auto;
 	border-left:3px solid green;
 }
 .social-contact img{
-	width: 45px; 
-	height: 45px;
+	width: 50px; 
+	height: 50px;
 	margin-left: 8px;
 	margin-top: 5px;
+}
+.analyse-link{
+	border:3px solid white;
+	padding:0px 0px 10px 15px;
+	margin-top: 38px;
+}
+.analyse-link a{
+	color:#2de6ce;
 }
