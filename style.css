@@ -33,18 +33,21 @@ h5,
 h6 {
 	font-family: 'Francois One', sans-serif;
 }
-.front-page,.portfolio,.case-studies,.single-page,.grid,.contact-page,.website-grader{
+/*.front-page,.portfolio,.case-studies,.single-page,.grid,.contact-page,.website-grader{
 	padding-top: 10%;
 	padding-bottom: 10%;
+}*/
+.space-top{
+	height: 100px;
 }
-#single-team{
+/*#single-team{
 	padding-top: 8%;
 	padding-bottom: 10%;
-}
-.team{
+}*/
+/*.team{
 	padding-top: 5%;
 	padding-bottom: 10%;
-}
+}*/
 
 .member-image{
 	width: 220px;
@@ -677,26 +680,22 @@ input:focus{
 	text-align: center;
 }
 
-.team-img{
-	width: 270px;
-	height: 250px;	
-	display: block;
-    margin: 0 auto;
-}
-
 .team-heading{
 	text-align: center;
 	width: auto;
 	text-decoration-line: underline;
-	padding: 1em;
 }
 .m-explore-btn{
 	border: 2px solid black;
     background: none;
     outline: none;
     margin-top: 8px;
+    font-weight: bold;
 }
-
+.m-member-data{
+	text-align: center;
+	margin-top: 20px;
+}
 /*footer*/
 
 .footer{
