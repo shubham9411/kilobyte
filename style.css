@@ -19,7 +19,9 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 */
-
+html{
+	min-height: 100%;
+}
 body{
 	font-family: Times,sans-serif;
 }
@@ -516,21 +518,6 @@ a:hover{
 		font-size: 20px;
 	}
 }
-
-/*testimonials
-#myCarousel{
-	text-align: center;	
-	margin: 20px 0px 20px 0px;
-	background: #aea3ff;
-	padding: 10px;
-}
-
-.carousel-inner>.item{
-    height: 100px;
-    font-size: 20px;
-    font-family: 'Francois One', sans-serif;
-}
-
 /*frontpage image animation*/
 
 .animate-me{
@@ -631,7 +618,7 @@ a:hover{
 }
 
 /*contact form*/
-.contact-details input[type="text"], input[type="email"]{
+.contact-details input[type="text"],.contact-details input[type="email"]{
     top: -.35em;
     border: none;
     background: rgba(140,140,140,.2);
@@ -647,7 +634,7 @@ a:hover{
 input:focus{
 	background:none !important;
 }
-.contact .contact-details input[type="submit"]{
+.contact>.contact-details>input[type="submit"]{
 	float: right;
 	margin-right: 20%;
 	border:0px;
@@ -726,6 +713,56 @@ input:focus{
 .address-footer{
 	margin-top: 10px;
 	float: right;
+}
+
+#e-id,#wname{
+background-color:white;
+border:none;
+border-bottom: 1px solid black;
+}
+
+div.wpcf7-mail-sent-ok,div.wpcf7-validation-errors{
+	border:0px solid white;
+}
+
+#analyze{
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 7px 25px;
+    margin-top: 25px;
+}
+.score{
+	color:#297ec7;
+}
+.preq{
+	color:Green;
+}
+
+.card2{
+padding-top:20%;
+text-align: center;
+margin-bottom: 20px;
+height:200px;
+background: white;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mybox{
+padding: 5px;
+background: rgba(245, 245, 245, 0.37);
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+width: 100%;
+height: auto;
+}
+
+.yellow.mybox{
+	border-left:3px solid yellow;
+}
+.green.mybox{
+	border-left:3px solid green;
 }
 .social-contact img{
 	width: 45px; 
