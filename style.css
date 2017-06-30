@@ -214,11 +214,15 @@ h6 {
 .wrap.card img{
 	width: 100%;
 }
-html{
-  position:relative; 
+html{ 
+  height: 100%;
+}
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
   min-height: 100%;
 }
-
 .blogc{
 	padding:0;
 	height: auto;
@@ -369,6 +373,10 @@ a:hover{
 	}
 	.blog-featured{
 		height:auto !important;
+	}
+	.address-footer{
+		float: none !important;
+		text-align: center;
 	}
 }
 
@@ -709,6 +717,8 @@ input:focus{
     color: white;
     padding: 10px 0px 20px 0px;
     justify-content: space-around;
+    position: absolute;
+    top: 100%;
 }
 .social-contact{
 	text-align: center;
