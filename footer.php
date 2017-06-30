@@ -16,7 +16,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 col-sm-4">
-				
+					<div class="analyse-link"><a href=""><h1>Analyze Your Website</h1></a></div>
 				</div>
 				<div class="col-md-4 col-sm-5">
 					<div class="social-contact">

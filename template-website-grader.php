@@ -6,7 +6,7 @@ get_header();
 ?>
 
 <div class="container">
-<br><br><br><br><br><br>
+<div class="website-grader">
 	<div class="wg" style="text-align: center;">
 		<h1>TEST YOUR WEBSITE</h1>
 		<div class="analyze">
@@ -31,6 +31,7 @@ get_header();
 	<div class="Performance">
 	<img src="<?php echo plugins_url();?>\contact-form-7\images\ajax-loader.gif">
 	</div>
+</div>
 </div>
 </div>
 
