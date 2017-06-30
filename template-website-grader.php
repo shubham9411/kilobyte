@@ -20,18 +20,16 @@ get_header();
 	<h2 style="text-align: center;">SUMMARY:</h2>
 	<div class="result2 row" >
 		<div class="col-md-4 col-sm-4">
-			<h3><div class="card2 score"></div></h3>
+			<h3><div class="card2 score"><img src="<?php echo plugins_url();?>\contact-form-7\images\ajax-loader.gif"></div></h3>
 		</div>
 		<div class="col-md-4 col-sm-4">
-			<h3><div class="preq card2"></div></h3>
-		</div>
-		<div class="col-md-4 col-sm-4">
-			<h3><div class="card2">LOAD TIME</div></h3>
+			<h3><div class="preq card2"><img src="<?php echo plugins_url();?>\contact-form-7\images\ajax-loader.gif"></div></h3>
 		</div>
 	</div>
 
 	<h2 style="text-align: center;">PERFORMANCE:</h2>
 	<div class="Performance">
+	<img src="<?php echo plugins_url();?>\contact-form-7\images\ajax-loader.gif">
 	</div>
 </div>
 </div>
@@ -44,7 +42,6 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 }, false );
 
 function doThis(){
-	alert("hey");
   var webs = jQuery("#wname").val();
   var key = "AIzaSyDKAeC02KcdPOHWVEZqdR1t5wwgaFJJKiM";
   var api_url ="https://www.googleapis.com/pagespeedonline/v2/runPagespeed?url="+webs+"&key="+key+"";
@@ -68,28 +65,18 @@ function doThis(){
     var p="",q="",i=0,ri=[],ln=[];   
     for( i=0;i<10;i++){
       ln[i]=r[i].localizedRuleName;
-      ri[i]=r[i].ruleImpact;
+      ri[i]=(r[i].ruleImpact).toFixed(3);
       if(ri[i]>0)
-	      p =p+"<div class='yellow mybox'><h3>"+ln[i]+"</h3><div class='desc'> impact on your score: "+ri[i]+"</div></div><br>";
+	      p =p+"<div class='yellow mybox'><h3>"+ln[i]+"</h3><div class='desc'> Impact on your score: "+ri[i]+"</div></div><br>";
   	  else
   	  	q =q+"<div class='green mybox'><h3>"+ln[i]+"</h3></div><br>";
   	} 
   	 jQuery(".score").html("SCORE <br>"+score);
   	 jQuery(".preq").html("REQUESTS <br>"+preq);
-  	 jQuery(".Performance").html("<h2>Rules passed: </h2>"+q);
-  	 jQuery(".Performance").append("<h2>needs improvement: </h2>"+p);
+  	 jQuery(".Performance").html("<h2 style='text-decoration:underline';>Test passed: </h2>"+q);
+  	 jQuery(".Performance").append("<h2 style='text-decoration:underline';>Needs Optimization: </h2>"+p);
   });
   jQuery(".results").css('display','block');
-}
-
-function addcontent(i){
-	var s=""
-	switch(i){
-		case 1: s="xyz"
-		break;
-		default: s="abcd"
-	}
-	return s;
 }
 
 </script> 
@@ -101,4 +88,5 @@ function addcontent(i){
 	        pdf.save('hello_world.pdf');
 	</script>
  -->
-<?php get_footer();
+<?php
+ get_footer();

@@ -635,7 +635,7 @@ a:hover{
 input:focus{
 	background:none !important;
 }
-.contact>.contact-details>input[type="submit"]{
+.contact .contact-details input[type="submit"]{
 	float: right;
 	margin-right: 20%;
 	border:0px;
@@ -716,6 +716,7 @@ input:focus{
 	float: right;
 }
 
+/*website analyzer*/
 #e-id,#wname{
 background-color:white;
 border:none;
@@ -729,15 +730,19 @@ div.wpcf7-mail-sent-ok,div.wpcf7-validation-errors{
 #analyze{
     border: none;
     color: white;
-    background-color: black;
+    background-color: black !important;
     padding: 7px 25px;
     margin-top: 25px;
 }
 .score{
 	color:#297ec7;
+    border: 1px solid #297ec7;
+    border-radius: 35px 35px 0px 30px;
 }
 .preq{
 	color:Green;
+    border: 1px solid Green;
+    border-radius: 35px 35px 0px 30px;
 }
 
 .card2{
@@ -746,8 +751,6 @@ text-align: center;
 margin-bottom: 20px;
 height:200px;
 background: white;
-box-sizing: border-box;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .mybox{
