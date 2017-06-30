@@ -15,7 +15,8 @@ get_header(); ?>
 		<?php
 		while ( have_posts() ) : the_post();
 			get_template_part( 'template-parts/content', get_post_format() );
-
+			kilobyte_posted_on(); 
+			echo '<hr>'	
 			// the_post_navigation();
 
 			// If comments are open or we have at least one comment, load up the comment template.

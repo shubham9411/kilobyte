@@ -29,12 +29,12 @@ get_header();
 				        // get all the user's date_add()
 				        $author_info = get_userdata($author->ID);
 				        ?>
-				        <div class="img-responsive"><?php echo get_avatar($author->ID, 220 );?></div>
+				        <div><?php echo get_avatar($author->ID, 220 );?></div>
 				        <?php
 				        echo '<h2>'.$author_info->first_name . ' ' . $author_info->last_name.'</h2>';
 				        echo '<h4>'.$author_info->user_description.'</h4>';
 						?>
-						<a href=""><button class="m-explore-btn btn-sm">EXPLORE MORE</button></a>
+						<a href="<?php echo get_page_link(466); ?>"><button class="m-explore-btn btn-sm">EXPLORE MORE</button></a>
 						</div>
 					<?php
 				    }

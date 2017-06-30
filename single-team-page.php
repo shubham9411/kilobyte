@@ -13,7 +13,7 @@ get_header();
 					<h4>SHORT DISCRIPTION</h4>
 				</div>
 				<div class="col-md-3 col-sm-3">
-					<div ><img src="<?php echo get_stylesheet_directory_uri().'/img/male.jpg';?>" class="img-responsive img-circle member-image"></div>
+					<div><?php echo get_avatar(id, 220 );?></div>
 				</div>
 			</div>
 		</div>

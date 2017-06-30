@@ -384,6 +384,9 @@ a:hover{
 	.analyse-link{
 		text-align: center;
 	}
+	.space-top{
+		height: 0px;
+	}
 }
 
 @media screen and (max-width: 480px) {
