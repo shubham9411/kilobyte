@@ -148,3 +148,79 @@ $labels = array(
 	endif;
 
 add_action('init','kilobyte_custom_taxonomy_casestudy' );
+
+
+//custom post type Personal blogs
+
+if(!function_exists( 'kilobyte_custom_post_type_Personalblogs')):
+function kilobyte_custom_post_type_Personalblogs(){
+	$labels = array( 
+		'name'=>'Personal blogs',
+		'singular_name'=>'Personal blogs',
+		'add_new' => 'Add Personal blogs',
+		'all_items' => 'All Personal blogs',
+		'add_new_item'=> 'Add Personal blogs',
+		'new_item' => 'New Personal blogs',
+		'view_item' => 'View Personal blogs',
+		'search_item' => 'Search Personal blogs',
+		'not_found' =>	'no items found',
+		'not_found_in_trash' => 'not found in trash',
+		'parent_item_colon' => 'parent'	
+		);
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+		'has_archive' => true,
+		'publicaly_queryable' => true, 
+		'query_var' => true,
+		'rewrite' => array( 'slug' => 'Personalblogs','with_front' => false ),
+		'capability_type' =>'post',
+		'heirarchical' => false,
+		'supports' => array(
+			'title',
+			'editor',
+			'thumbnail',
+			'excerpt',
+			'revisons',
+			'post_formats',
+			'custom-fields'
+			),
+		'menu_position' => 7,
+		'exclude_from_search' => false
+		);
+
+	register_post_type('Personalblogs',$args);
+}
+endif;
+
+add_action('init','kilobyte_custom_post_type_Personalblogs' );
+
+// taxonomy for Personalblogs
+if ( ! function_exists( 'kilobyte_custom_taxonomy_Personalblogs')):
+function kilobyte_custom_taxonomy_Personalblogs(){
+$labels = array(
+		'name'              => 'Personalblogs type',
+		'singular_name'     => 'Personalblogs type',
+		'search_items'      => 'search types',
+		'all_items'         => 'all types',
+		'parent_item'       => 'parent Type',
+		'parent_item_colon' => 'parent Type',
+		'edit_item'         => 'edit Type',
+		'update_item'       => 'update Type',
+		'new_item_name'     => 'new type Name',
+		'menu_name'         => 'Personalblogs type'
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'Personalblogs' ),
+	);
+	register_taxonomy('Personalblogs type',array('post-type-Personalblogs'),$args );
+	}
+	endif;
+
+add_action('init','kilobyte_custom_taxonomy_Personalblogs' );
