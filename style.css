@@ -637,7 +637,7 @@ a:hover{
 input:focus{
 	background:none !important;
 }
-.contact>.contact-details>input[type="submit"]{
+.contact .contact-details input[type="submit"]{
 	float: right;
 	margin-right: 20%;
 	border:0px;
