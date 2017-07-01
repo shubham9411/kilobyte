@@ -52,7 +52,7 @@ get_header(); ?>
     ?>
     </div>
 
-    <a href="<?php echo the_permalink(get_page_by_title('Blogs'));?>" class="link-see"><h1 style="float: right;color:#FF0066;" class="b-see-more">See more</h1></a>
+    <a href="<?php echo the_permalink(get_page_by_title('Blogs'));?>"><h1 style="float: right;">See more</h1></a>
     </div>
     <br>
 
@@ -84,7 +84,7 @@ get_header(); ?>
     endwhile;
   endif;
   ?>
-    <a href="<?php echo get_page_link(35); ?>"><h1 style="float: right;color:#FF0066;">See more</h1></a>
+    <a href="<?php echo get_page_link(35); ?>"><h1 style="float: right;">See more</h1></a>
   </div>
   </div>
 </div>
