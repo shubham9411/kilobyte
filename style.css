@@ -240,12 +240,12 @@ body {
 	border-radius: 100%;
 }
 .cube {
-  top: 135%;
+  top: 140%;
   left:25%;
   text-align: center;
   color: white;
   transform-style: preserve-3d;
-  font-size: 3vmin;
+  font-size: 2vmin;
   animation: ani 8s linear infinite;
 }
 .point{
@@ -515,8 +515,10 @@ a:hover{
 	.main-image{
 		margin-top:40px;
 	}
-	.c{
-		font-size: 14px !important;
+	.animate-me .c{
+		font-size: 14px;
+		top:31.5%;
+		right: 41%;
 	}
 
 	.contact.contact-details>input{
