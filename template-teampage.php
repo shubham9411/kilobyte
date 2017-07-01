@@ -34,7 +34,7 @@ get_header();
 				        echo '<h2>'.$author_info->first_name . ' ' . $author_info->last_name.'</h2>';
 				        echo '<h4>'.$author_info->urole.'</h4>';
 						?>
-						<a href="<?php echo get_page_link(466);
+						<a href="<?php echo get_page_link(133);
 						echo "?uid=".$author->ID ;?>">
 						<button class="m-explore-btn btn-sm">EXPLORE MORE</button></a>
 						</div>
