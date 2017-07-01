@@ -17,6 +17,7 @@ get_header();
 				</div>
 				<div class="col-md-3 col-sm-3">
 					<div ><div class="img-responsive"><?php echo get_avatar($author_info->ID, 220 );?></div></div>
+
 				</div>
 			</div>
 		</div>
