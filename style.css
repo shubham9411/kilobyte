@@ -622,7 +622,7 @@ a:hover{
 }
 
 /*contact form*/
-.contact-details input[type="text"],.contact-details input[type="email"]{
+.contact-details input[type="text"],.contact-details input[type="email"],.contact-details select{
     top: -.35em;
     border: none;
     background: rgba(140,140,140,.2);

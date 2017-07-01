@@ -32,9 +32,9 @@ get_header();
 				        <div class="img-responsive"><?php echo get_avatar($author->ID, 220 );?></div>
 				        <?php
 				        echo '<h2>'.$author_info->first_name . ' ' . $author_info->last_name.'</h2>';
-				        echo '<h4>'.$author_info->user_description.'</h4>';
+				        echo '<h4>'.$author_info->urole.'</h4>';
 						?>
-						<a href=""><button class="m-explore-btn btn-sm">EXPLORE MORE</button></a>
+						<a href="http://127.0.0.1/wordpress/?page_id=133&uid=<?php echo $author->ID ;?>"><button class="m-explore-btn btn-sm">EXPLORE MORE</button></a>
 						</div>
 					<?php
 				    }
