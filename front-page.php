@@ -23,15 +23,7 @@ get_header(); ?>
   				<div class="start-btn">
   					<button class="input-lg">GET STARTED</button>
   				</div>
-          <div class='cube'>
-            <div class='cube__face'></div>
-            <div class='cube__face'></div>
-            <div class='cube__face'></div>
-            <div class='cube__face'></div>
-            <div class='cube__face'></div>
-            <div class='cube__face'></div>
-          </div>
-          </div>
+            </div>
   			<div class="col-sm-6 animate-me">
   				<img src="<?php echo get_stylesheet_directory_uri().'/img/1.png';?>">
           <div class="c">
@@ -40,8 +32,6 @@ get_header(); ?>
   			</div>
   		</div>
   </div>
-  <br>
-  </br>
   <!-- blogs -->
   <div class="blogs-more">
     <?php
