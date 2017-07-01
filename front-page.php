@@ -40,7 +40,8 @@ get_header(); ?>
   			</div>
   		</div>
   </div>
-
+  <br>
+  </br>
   <!-- blogs -->
   <div class="blogs-more">
     <?php
