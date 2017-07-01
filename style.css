@@ -240,12 +240,12 @@ body {
 	border-radius: 100%;
 }
 .cube {
-  top: 135%;
+  top: 140%;
   left:25%;
   text-align: center;
   color: white;
   transform-style: preserve-3d;
-  font-size: 3vmin;
+  font-size: 2vmin;
   animation: ani 8s linear infinite;
 }
 .point{
@@ -394,6 +394,12 @@ a:hover{
 	.blogc{
 		width: 100%;
 	}
+	.contact-details input[type="text"],.contact-details input[type="email"],.contact-details select{
+		width: 99% !important;
+	}
+	.contact-page .contact-head{
+		padding-left: 0.6em; 
+	}
 }
 
 #main{
@@ -509,8 +515,10 @@ a:hover{
 	.main-image{
 		margin-top:40px;
 	}
-	.c{
-		font-size: 14px !important;
+	.animate-me .c{
+		font-size: 14px;
+		top:31.5%;
+		right: 41%;
 	}
 
 	.contact.contact-details>input{
@@ -632,6 +640,9 @@ a:hover{
 }
 
 /*contact form*/
+.contact-page{
+	margin-top: -50px;
+}
 .contact-details input[type="text"],.contact-details input[type="email"],.contact-details select{
     top: -.35em;
     border: none;
@@ -662,7 +673,7 @@ input:focus{
 .contact-details {
     line-height: 3.75em;
     font-size: 1.5em;
-    padding: 0% 25%;
+    padding: 0% 21%;
 }
 .contact-head{
 	padding: 8% 0%;
