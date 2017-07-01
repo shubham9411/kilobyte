@@ -119,7 +119,9 @@ h6 {
 		text-align: center;
 	}
 }
-
+.navbar-nav{
+	padding-top: 2px;
+}
 .navbar-nav > li > a:before {
   content: "";
   position: absolute;
@@ -161,17 +163,13 @@ h6 {
 	border-radius: 25px;
 	width: 9em;
 	color: white;
-	background-color:#00CC66;
+	background-color:#FF0066;
 	font-family: 'Oswald', sans-serif;
 	font-weight: bold;
 	outline: none;
 	-webkit-transition: 1s;
 	transition:1s;
 }
-.start-btn button:hover{
-	background-color: #FF0066;
-}
-
 .hero-part{
 	text-align:left;
 }
@@ -191,11 +189,8 @@ h6 {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	-webkit-transition: visibility 0s, opacity 0.5s linear;
 	transition: visibility 0s, opacity 0.5s linear;
-	position: absolute;
-	top: 13%;
-	width: 90%;
 	box-shadow: 0 0 2px 0px rgba(12, 3, 25, 0.8);
-	margin-left: 13px;
+	margin: 0.7em;
 }
 .wrap.card:hover .port-meta{
 	visibility: visible;
@@ -336,6 +331,9 @@ a:hover{
 		top: 28%;
 		right: 35%;
 	}
+	.port-meta{
+		width: 94% !important;
+	}
 }
 @media screen and (max-width: 767px) {
 	.navbar-nav > li > a:before{
@@ -386,6 +384,9 @@ a:hover{
 	}
 	.space-top{
 		height: 0px;
+	}
+	.port-meta{
+		width: 96% !important;
 	}
 }
 
@@ -475,6 +476,12 @@ a:hover{
 	}
 	.blogc{
 		width: 85%;
+	}
+	.thumbnail{
+		height: 220px !important;
+	}
+	.port-meta{
+		width: 91.5% !important;
 	}
 }
 @media only screen and (min-width: 480px) and (max-width: 992px) {

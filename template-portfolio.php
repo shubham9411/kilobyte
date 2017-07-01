@@ -17,11 +17,14 @@ get_header();
 			<div class="col-md-6 col-xs-12 col-sm-6">
 				<div class="wrap card">
 					<a href="<?php the_permalink();?>">
-					<div class="port-meta">
-						<h3 class="head"><?php the_title();?></h3>
-						<p class="bodytext"><?php echo get_post_meta( $post->ID, 'sub_heading', true ); ?></p>
-					</div>
-					<?php the_post_thumbnail( 'portifolio-thumbnail', 'class=img-responsive' ); ?>
+					
+					<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+						<div class="thumbnail img-responsive" style="background-image:url('<?php echo $thumb["0"]?>');background-size: 100% 100%;height: 360px;">
+							<div class="port-meta">
+								<h3 class="head"><?php the_title();?></h3>
+								<p class="bodytext"><?php echo get_post_meta( $post->ID, 'sub_heading', true ); ?></p>
+							</div>
+						</div>
 					</a>
 				</div>
 			</div>

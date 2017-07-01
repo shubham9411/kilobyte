@@ -61,7 +61,7 @@ get_header(); ?>
     ?>
     </div>
 
-    <a href="<?php echo the_permalink(get_page_by_title('Blogs'));?>"><h1 style="float: right;">See more</h1></a>
+    <a href="<?php echo the_permalink(get_page_by_title('Blogs'));?>"><h1 style="float: right;color:#FF0066;">See more</h1></a>
     </div>
     <br>
 
@@ -76,21 +76,24 @@ get_header(); ?>
       // echo get_post_meta($post->ID, 'sub_heading', true);
       ?>
     <div class="col-md-6 col-xs-12 col-sm-6">
-      <div class="wrap card">
-        <a href="<?php the_permalink();?>">
-        <?php the_post_thumbnail( 'portifolio-thumbnail', 'class=img-responsive' ); ?>
-        <div class="port-meta">
-          <h3 class="head"><?php the_title();?></h3>
-          <p class="bodytext"><?php echo get_post_meta( $post->ID, 'sub_heading', true ); ?></p>
+        <div class="wrap card">
+            <a href="<?php the_permalink();?>">
+            
+            <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+                <div class="thumbnail img-responsive" style="background-image:url('<?php echo $thumb["0"]?>');background-size: 100% 100%;height: 360px;">
+                    <div class="port-meta">
+                        <h3 class="head"><?php the_title();?></h3>
+                        <p class="bodytext"><?php echo get_post_meta( $post->ID, 'sub_heading', true ); ?></p>
+                    </div>
+                </div>
+            </a>
         </div>
-        </a>
-      </div>
     </div>
     <?php
     endwhile;
   endif;
   ?>
-    <a href="<?php echo get_page_link(35); ?>"><h1 style="float: right;">See more</h1></a>
+    <a href="<?php echo get_page_link(35); ?>"><h1 style="float: right;color:#FF0066;">See more</h1></a>
   </div>
   </div>
 </div>
