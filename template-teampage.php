@@ -32,9 +32,11 @@ get_header();
 				        <div><?php echo get_avatar($author->ID, 220 );?></div>
 				        <?php
 				        echo '<h2>'.$author_info->first_name . ' ' . $author_info->last_name.'</h2>';
-				        echo '<h4>'.$author_info->user_description.'</h4>';
+				        echo '<h4>'.$author_info->urole.'</h4>';
 						?>
-						<a href="<?php echo get_page_link(466); ?>"><button class="m-explore-btn btn-sm">EXPLORE MORE</button></a>
+						<a href="<?php echo get_page_link(466);
+						echo "?uid=".$author->ID ;?>">
+						<button class="m-explore-btn btn-sm">EXPLORE MORE</button></a>
 						</div>
 					<?php
 				    }

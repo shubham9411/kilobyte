@@ -9,11 +9,15 @@ get_header();
 		<div class="member-cover">
 			<div class="row" style="width: 100%;">
 				<div class="col-md-9 col-sm-9">
-					<h1>NAME OF MEMBER</h1>
-					<h4>SHORT DISCRIPTION</h4>
+					<h1><?php
+						$author_info=get_userdata($_GET['uid']);
+					 echo $author_info->first_name . ' ' . $author_info->last_name;?>
+					 </h1>
+					<h3>(<?php echo $author_info->urole;?>)</h3>
 				</div>
 				<div class="col-md-3 col-sm-3">
-					<div><?php echo get_avatar(id, 220 );?></div>
+					<div ><div class="img-responsive"><?php echo get_avatar($author_info->ID, 220 );?></div></div>
+
 				</div>
 			</div>
 		</div>
@@ -24,13 +28,21 @@ get_header();
 				<div class="col-md-7">
 					<div class="member-detailed">
 						<h2>DESCRIPTION</h2>
-						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+						<p><?php  	echo $author_info->user_description;?></p>
 					</div>
 				</div>
 				<div class="col-md-5">
 					<div class="member-blog">
 						<h2>BLOGS</h2>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+							<?php
+							    $args = array( 'author__in'=>$authorID,'post_type'=> 'personalblogs');
+							    $loop = new WP_Query($args);
+							    if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();
+							      ?><h2><?php the_title();?></h2>
+							    <?php
+							    endwhile;
+							  endif;
+							  ?>
 					</div>
 				</div>
 			</div>
