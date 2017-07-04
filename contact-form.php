@@ -22,7 +22,7 @@ get_header();
 
 		<div class="contact">
 			<div class="contact-details">
-							<?php echo do_shortcode('[contact-form-7 id="469" title="Untitled"]'); ?>
+							<?php echo do_shortcode('[contact-form-7 id="102" title="Contact form 1"]'); ?>
 					</div>
 				</div>
 
@@ -47,6 +47,38 @@ get_header();
 </div>
 <br>
 </br>
+<script type="text/javascript">
+	jQuery("input").on('focus',function(){
+        var sel = jQuery(this).attr('id');
+        var fsel =sel+"-focused";
+        ga('send', 'event', fsel,'focused');
+        checkInp(sel);
+        });
+
+    function checkInp(sel){
+        var sel2= jQuery('#'+sel);
+        jQuery(sel2).focusout(function(){
+           var x =sel2.val();
+           	if(x!="") ga('send', 'event', sel,'filled');
+          });
+        }
+
+    jQuery("select").on('focus',function(){
+        var sel = jQuery(this).attr('id');
+        var fsel =sel+"-focused";
+        ga('send', 'event', fsel,'focused');
+        checkSelect(sel);
+        });
+
+    function checkSelect(sel){
+        var sel2 = jQuery('#'+sel);
+    	jQuery(sel2).focusout(function(){
+    		var x = sel2.val();
+    	    if(x!="") ga('send', 'event', sel,'filled');
+    	});
+    }      
+  </script>
+
 <?php
 get_footer();
 ?>

@@ -33,21 +33,14 @@ h5,
 h6 {
 	font-family: 'Francois One', sans-serif;
 }
-/*.front-page,.portfolio,.case-studies,.single-page,.grid,.contact-page,.website-grader{
-	padding-top: 10%;
-	padding-bottom: 10%;
-}*/
+
 .space-top{
 	height: 100px;
 }
-/*#single-team{
-	padding-top: 8%;
-	padding-bottom: 10%;
-}*/
-/*.team{
-	padding-top: 5%;
-	padding-bottom: 10%;
-}*/
+
+.work-head,.blog-head{
+	margin-left: 50px;
+}
 
 .member-image{
 	width: 220px;
@@ -299,13 +292,12 @@ a:hover{
 		opacity: .8;
 		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 	}
-
 	.animate-me{
 		margin-top: 75px;
 	}
 
 	.animate-me .c{
-		top: 20%;	
+		top: 25%;	
 	}
 	#site-header-nav{
 		position: relative;
