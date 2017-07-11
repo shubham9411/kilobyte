@@ -5,7 +5,7 @@ Template Name: Team page
  */
 get_header();
 ?>
-<div class="container">
+<div class="container upper-z">
 	<div class="team">
 		<h1 class="team-heading">MEET THE TEAM</h1>
 		<div class="row">

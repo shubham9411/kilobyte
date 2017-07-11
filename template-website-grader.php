@@ -5,7 +5,7 @@ Template Name: website grader
 get_header();
 ?>
 
-<div class="container">
+<div class="container upper-z">
 <div class="website-grader">
 	<div class="wg" style="text-align: center;">
 		<h1>TEST YOUR WEBSITE</h1>
@@ -31,7 +31,7 @@ get_header();
 	<div class="Performance">
 	<img src="<?php echo plugins_url();?>\contact-form-7\images\ajax-loader.gif">
 	</div>
-      <button class="download" style="display: none">download</button>  
+      <button class="download" style="display: none">Download report</button>  
 </div>
 </div>
 </div>

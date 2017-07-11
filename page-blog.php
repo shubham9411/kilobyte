@@ -4,7 +4,7 @@ get_header();
 Template Name: blog
 */
 ?>
-<div class="container">
+<div class="upper-z container">
 	<div class="row grid">
 	<?php
 	$args = array('post_type' => 'post' );

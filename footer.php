@@ -11,7 +11,7 @@
 
 ?>
 <?php wp_footer(); ?>
-<div class="foot">
+<!-- <div class="foot">
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
@@ -40,7 +40,21 @@
 			</div>
 		</div>
 	</footer>
-	</div>
+	</div> -->
+
+<div class="f">  
+</div>
+<!-- footer -->
+<div class="footer">
+  <div class="fcontent"><div>
+    <div class="f-head">SO WHAT'S NEXT?</div>
+    <span class="f-main">WE'RE READY!</span>
+    <span class="f-sec"><i>lets Chat</i></span></div>
+  </div>
+  <span class="f-bottom">KILOBYTE TECHNOLOGIES</span>
+</div>
+
+	
 </body>
 
 </html>
