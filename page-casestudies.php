@@ -16,7 +16,7 @@ get_header();
 			<div class="row" onclick="window.location = '<?php the_permalink(); ?>';">
 
 				<div class="col-md-4 col-sm-5 case-study-image">
-					<div class="thumbnail"><?php if(has_post_thumbnail() ): ?>
+					<div ><?php if(has_post_thumbnail() ): ?>
 						<?php the_post_thumbnail('large','class=img-responsive');
 						endif;
 						?>
