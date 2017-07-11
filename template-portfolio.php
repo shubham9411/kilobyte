@@ -4,7 +4,7 @@ Template Name: Portfolio
 */
 get_header();
 ?>
-<div class="container ">
+<div class="container upper-z">
 	<div class="row portfolio">
 		<?php
 		$args = array(

@@ -5,7 +5,7 @@ Template Name: casestudies
 
 get_header();
 ?>
-<div class="container">
+<div class="container upper-z">
 	<div class="case-studies">
 		<?php
 		$args = array('post_type' => 'post-type-casestudy' );
