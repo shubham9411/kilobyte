@@ -66,7 +66,7 @@ body{
 	color:#505659;
 }
 .hero-section{
-	padding-bottom: 10%;    
+	padding-bottom: 11%;    
 }
 .tag-line{
 	line-height: 1em;
@@ -89,8 +89,7 @@ body{
 	color: white;
 	background-color:#0086fa;
 }
-
-@media screen and (max-width: 992px) and (min-width: 750px){
+@media screen and (max-width: 992px) and (min-width: 767px){
 	.tag-line{
 		font-size: 3em;
 		max-width: 500px;
@@ -99,35 +98,39 @@ body{
 		font-size: 1.3em;
 		max-width: 470px;	
 	}
-}
-@media screen and (max-width: 750px){
-	.hero-section{
-		text-align: center;
-	}
-	.tag-line{
-		font-size: 3em;
-	}
-	.short-intro{
-		font-size: 1.3em;
+	.gif .main-gif{
+		margin-top:-250px;
+		margin-left: 95%;
 	}
 }
 
 .work{
 	/*position: relative;*/
 	background: #eff0f1;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	padding-top: 6%;
+	padding-bottom: 6%;
 	
 }
 .work-meta>h1{
 	position: absolute;
-	top:-6%;
+	top:-5%;
 }
 @media screen and (max-width: 992px){
 	.work-meta>h1{
 	position: absolute;
 	top:-3%;
 	}	
+	.work-meta .w3{
+		height: 250px;
+	}
+	.work-meta .w2{
+		width: 100%;
+	}
+	.work-meta .sm{
+		position:initial;
+		float: right;
+		margin-top: 0px;
+	}
 }
 .work>.work-meta{
 	position: relative;
@@ -135,35 +138,34 @@ body{
 	height: 80%;
 	padding: 60px 50px 0px 50px;
 }
-.cont-2.row{
-	width: 49%;
-	margin: 10px 0px; 
-	height: 250px;
-}
-.w1{
-	width: 49%;
-	float: left;
-}
-.w1,.w3,.sm{
-	height:250px; 
+.w1,.w3,.w2{
+	height:260px; 
 	color:#333;
+	margin-top: 30px;
 }
 .sm{
 	color:#0086fa;
 	margin-top: 100px;
+	text-align: center;
+	position: relative;
+	top: -250px;
+	left: -12%;
 }
-.w2{
-	height:500px;
-	width: 49%;
-	float: right; 
-	color:#333;
+	.w2{
+		width: 50%; 
+	}
+	.w3{
+		height: 550px;
+	}
+.port{
+	padding-top: 1px;
 }
 
 .port-meta{
 	visibility: hidden;
-	padding: 1px 10px;
-    margin-top: 5px;
+	padding: 3px 0px 8px 10px;
 	background: white;
+	margin:15px 15px 0px 15px;
 	transition: visibility 0s, opacity 0.5s linear;
 	/*box-shadow: 0 0 2px 0px rgba(12, 3, 25, 0.8);*/
 }
@@ -458,6 +460,25 @@ a:hover{
 	}
 	.space-top{
 		height: 0px;
+	}
+	.port-meta{
+		visibility: visible;
+	}
+	.hero-section{
+		text-align: center;
+	}
+	.tag-line{
+		font-size: 3em;
+	}
+	.short-intro{
+		font-size: 1.3em;
+	}
+	.gif .main-gif{
+		display: none;
+	}
+	.gif .hero-image{
+		display: block;
+		margin-top: 30px;
 	}
 }
 
@@ -843,4 +864,15 @@ height: auto;
 }
 .analyse-link a{
 	color:#2de6ce;
+}
+
+/*front page new
+*/
+.main-gif{
+	position: absolute;
+	margin-top:-390px;
+	margin-left: 51%;
+}
+.hero-image{
+	display: none;
 }
