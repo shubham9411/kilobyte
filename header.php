@@ -19,6 +19,8 @@
 <link href="https://fonts.googleapis.com/css?family=Nova+Mono|Share+Tech+Mono" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
 <?php wp_head(); ?>
 </head>
 

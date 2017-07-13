@@ -1,10 +1,10 @@
 /*
-Theme Name: kilobyte
+Theme Name: kilobyte 2.0
 Theme URI: http://kilobytetech.com/
 Author: The Team
 Author URI: http://kilobytetech.me/
 Description: theme for kilobytetech
-Version: 1.0.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: kilobyte
@@ -19,8 +19,9 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 */
-h1,h2{
+h1,h2,h3{
 	font-weight: bolder;
+	font-family: 'ubuntu','Share Tech Mono', sans-serif;
 }
 /*lg and md nav*/
 
@@ -61,17 +62,17 @@ nav:hover #top-menu{
 	padding: 20px;
 }
 
-body{
-	font-family: ubuntu,Times,sans-serif;
-	color:#505659;
 
+body{
+	font-family: 'ubuntu',Times,sans-serif;
+	color:#505659;
 }
 .hero-section{
 	padding-bottom: 11%;    
 }
 .tag-line{
 	line-height: 1em;
-	padding-top: 150px;
+	padding-top: 100px;
 	max-width: 700px;
 	font-size: 4.5em;
     font-weight: bold;
@@ -79,7 +80,7 @@ body{
 .short-intro{
 	max-width: 600px;
     font-weight: normal;
-    font-size: 2.2em;
+    font-size: 1.9em;
     line-height: 1.2;
     padding-top: 15px;
 }
@@ -96,7 +97,7 @@ body{
 		max-width: 500px;
 	}
 	.short-intro{
-		font-size: 1.3em;
+		font-size: 1.6em;
 		max-width: 470px;	
 	}
 	.gif .main-gif{
@@ -106,21 +107,21 @@ body{
 }
 
 .work{
-	/*position: relative;*/
 	background: #eff0f1;
-	padding-top: 6%;
-	padding-bottom: 6%;
+	padding-top: 7%;
+	padding-bottom: 7%;
 	
 }
 .work-meta>h1{
 	position: absolute;
-	top:-5%;
+	top:-6%;
 }
+
 @media screen and (max-width: 992px){
 	.work-meta>h1{
 	position: absolute;
-	top:-3%;
-	}	
+	top:-5%;
+	}
 	.work-meta .w3{
 		height: 250px;
 	}
@@ -136,11 +137,10 @@ body{
 .work>.work-meta{
 	position: relative;
 	background: white;
-	height: 80%;
-	padding: 60px 50px 0px 50px;
+	padding: 65px 55px 0px 55px;
 }
 .w1,.w3,.w2{
-	height:260px; 
+	height:220px; 
 	color:#333;
 	margin-top: 30px;
 }
@@ -152,11 +152,14 @@ body{
 	top: -250px;
 	left: -12%;
 }
+.sm>a>	h2{
+	font-size: 2.5em;
+}
 	.w2{
 		width: 50%; 
 	}
 	.w3{
-		height: 550px;
+		height: 480px;
 	}
 .port{
 	padding-top: 1px;
@@ -178,7 +181,6 @@ body{
 	padding-bottom: 50px;
 }
 .reading-section>.blog>a,.reading-section>.case-study>a{
-	margin-top: 30px;		
 	float: right;
 }
 .reading-section>.blog>h1,.reading-section>.case-study>h1{
@@ -190,6 +192,25 @@ body{
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;  
 }
+.reading-section>.blog>.card>h2, .reading-section>.case-study>.card>h2{
+	font-size: 2em;
+}
+.reading-section>.blog>.card>p, .reading-section>.case-study>.card>p{
+	font-size: 18px;
+}
+@media screen and (max-width: 992px){
+	.reading-section>.blog>.card, .reading-section>.case-study>.card{
+		height: auto;
+	}
+	.reading-section>.case-study{
+		margin-bottom: 100px;
+	}
+	.reading-section>.blog>h1,.reading-section>.case-study>h1{
+	margin-bottom: 5%;
+	}
+
+}
+
 .client-logos{
 	height: 150px;
 	background: #eff0f1;
@@ -258,7 +279,6 @@ body{
 		width: 40%;
 	    padding: 10px 20px 10px 20px;
 		background: white;
-		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);	
 		margin-left: 40%;
 		margin-top: -50px;
 		position: relative;
@@ -388,7 +408,7 @@ body{
 
 .menu-bar > li > a{
 	font-size: 1.3em;
-	font-family: 'Share Tech Mono', sans-serif;
+	font-family: ubuntu,'Share Tech Mono', sans-serif;
 	font-style: normal;
 	-webkit-transition: .5s;
 	transition: .5s;
@@ -506,10 +526,11 @@ a:hover{
 		text-align: center;
 	}
 	.tag-line{
+		padding-top: 50px;
 		font-size: 3em;
 	}
 	.short-intro{
-		font-size: 1.3em;
+		font-size: 1.5em;
 	}
 	.gif .main-gif{
 		display: none;
@@ -605,7 +626,7 @@ a:hover{
 		font-size: 3.5em;
 	}
 	.short-intro{
-		font-size: 1.2em;
+		font-size: 1.5em;
 	}
 }
 @media only screen and (max-width: 480px) {

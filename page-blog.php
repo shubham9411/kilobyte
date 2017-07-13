@@ -4,7 +4,6 @@ get_header();
 Template Name: blog
 */
 ?>
-
 	<div class="upper-z container">
 
 		<?php
@@ -23,7 +22,7 @@ Template Name: blog
 				      }
 			      ?>
 			</div>
-		    <div class="blog-details" onclick="window.location = '<?php the_permalink(); ?>';">
+		    <div class="blog-details card" onclick="window.location = '<?php the_permalink(); ?>';">
 		    	<div class="blog-title">
 				    <h1><?php the_title();?></h1>
 		        </div>	

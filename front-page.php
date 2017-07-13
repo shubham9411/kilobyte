@@ -29,7 +29,7 @@ get_header(); ?>
         <div class="short-intro">
             We craft digital products and experiences to start, scale and empower identities and organisations.
         </div>
-        <div class="btn strt-btn">Experience More</div>
+      <div class="btn strt-btn">Experience More</div>
     </div>
     <div class="gif row">
         <div class="col-md-8 col-sm-6">
@@ -80,7 +80,7 @@ get_header(); ?>
           </div>
       </div>
       </div>
-      <div class="sm"><h2>See More</h2></div>
+      <div class="sm"><a href="<?php echo get_page_link(1942);?>"><h2>See More</h2></a></div>
   </div>
 </div>
 
@@ -102,7 +102,7 @@ get_header(); ?>
                    wp_reset_postdata();
                 ?>
             </div>
-      <a><h2>See more</h2></a>
+            <a href="<?php echo get_page_link(1997);?>"><h2>See more</h2></a>  
     </div>
     <div class="col-md-6 col-lg-6 blog">
       <h1>Blogs</h1>
@@ -118,7 +118,7 @@ get_header(); ?>
                     endif;
                    wp_reset_postdata();
                 ?></div>
-      <a><h2>See more</h2></a>
+      <a href="<?php echo get_page_link(1847);?>"><h2>See more</h2></a>
     </div>
   </div>
 </div>
