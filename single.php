@@ -8,10 +8,18 @@
  */
 
 get_header(); ?>
-<div class="single-page">
+<div class="single-page upper-z">
+	<div class="blog-cover"><?php if(has_post_thumbnail()){ ?>
+		      <?php 
+			      the_post_thumbnail('cover-thumb',['class'=>'img-responsive'] );
+		      
+		      }
+		      else{
+		      }
+		      ?>
+			</div>
 	<div id="primary" class="content-area container">
 		<main id="main" class="site-main col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" role="main">
-
 		<?php
 		while ( have_posts() ) : the_post();
 			get_template_part( 'template-parts/content', get_post_format() );

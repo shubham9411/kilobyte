@@ -34,6 +34,7 @@ function kilobyte_setup() {
 	 * provide it for us.
 	 */
 	add_image_size( 'portifolio-thumbnail', 300, 200, true );
+	add_image_size( 'cover-thumb', 1300, 380, true );
 
 	add_theme_support( 'title-tag' );
 
