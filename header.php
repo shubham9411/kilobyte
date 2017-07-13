@@ -32,9 +32,9 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a href="<?php echo bloginfo( 'url' ); ?>"><img src="<?php echo get_stylesheet_directory_uri().'/img/logo.png';?>" class="img-responsive logo-image" alt="Kilobyte Technologies"></a>
+			<div class="head-title"><a href="<?php echo bloginfo( 'url' ); ?>">Kilobyte Technologies</a></div>
 		</div>
-		<div id="top-menu" class="navbar-collapse collapse navbar-right">
+		<div id="top-menu" class="navbar-collapse collapse navbar-right menu-li">
 			<?php
 				$args = array(
 					'theme_location' => 'top',
@@ -47,8 +47,23 @@
 				wp_nav_menu( $args );
 				?>
 		</div><!--.nav-collapse -->
+		<div class="list-bar">
+			<div id="nav-icon1">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</div>
+		</div>
 	</div>
 </nav>
 <div class="space-top">
 	
 </div>
+<script type="text/javascript">
+  jQuery(document).ready(function(){
+   jQuery('#nav-icon1').click(function(){
+		jQuery(this).toggleClass('open');
+		jQuery('#top-menu').toggleClass('menu-show');
+	});
+  });
+</script>
