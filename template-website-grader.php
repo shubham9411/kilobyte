@@ -9,8 +9,9 @@ get_header();
 <div class="website-grader">
 	<div class="wg" style="text-align: center;">
 		<h1>TEST YOUR WEBSITE</h1>
+    <br>
 		<div class="analyze">
-			<?php echo do_shortcode('[contact-form-7 id="129" title="web grader"]' ); ?>
+			<?php echo do_shortcode('[contact-form-7 id="470" title="Web Grader"]' ); ?>
 		</div>
 	</div>
 <hr>

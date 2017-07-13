@@ -22,8 +22,10 @@ get_header();
 					<?php the_excerpt();?>
 				</div>
 				<div class="col-md-4 col-sm-5 case-study-image">
+
 					<div class=""><?php if(has_post_thumbnail() ): ?>
 						<?php the_post_thumbnail('thumbnail','class=img-responsive');
+
 						endif;
 						?>
 					</div>

@@ -4,8 +4,9 @@ get_header();
 Template Name: blog
 */
 ?>
-	
+
 	<div class="upper-z container">
+
 		<?php
 		$args = array('post_type' => 'post' );
 		$loop = new WP_Query($args);
