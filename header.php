@@ -48,14 +48,12 @@
 				);
 				wp_nav_menu( $args );
 				?>
-			</div>
-			<div class="list-bar">
+			</div>		
 				<div id="nav-icon1">
 				  <span></span>
 				  <span></span>
 				  <span></span>
 				</div>
-			</div>
 		</div><!--.nav-collapse -->
 	</div>
 </nav>
