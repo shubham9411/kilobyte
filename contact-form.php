@@ -12,8 +12,8 @@ get_header();
 		jQuery("iframe").removeClass("clicked");	
 	}
 </script>
-<div class="container upper-z">
-	<div class="contact-page">
+<div class=" upper-z">
+	<div class="contact-page container">
 		<div class="contact-head">
 			<h1>LET'S CHAT</h1>
 			<p>Fill this out so we can learn more about you and your needs.</p>
@@ -21,7 +21,7 @@ get_header();
 
 
 		<div class="contact">
-			<div class="contact-details">
+			<div class="contact-details ">
 							<?php echo do_shortcode('[contact-form-7 id="102" title="Contact form 1"]'); ?>
 					</div>
 				</div>
