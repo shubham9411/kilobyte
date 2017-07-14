@@ -12,7 +12,7 @@
 ?>
 <?php wp_footer(); ?>
 
- <footer>
+ <footer class="bottom-footer">
 <a href="#" class="footer_link"></a>
 <div class="footer_content">
     <div class="f-head">SO WHAT'S NEXT?</div>
