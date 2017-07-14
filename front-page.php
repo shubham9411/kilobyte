@@ -15,7 +15,7 @@ get_header(); ?>
 <div class="upper-z">
 <!-- hero section -->
 <div class="hero-section container">
-    
+    <div><img src="<?php echo get_stylesheet_directory_uri().'/img/baloon.png'?>" class="baloon"></div>
     <div>
         <div class="tag-line">
             Digital Products that Businesses <i>love.</i>
