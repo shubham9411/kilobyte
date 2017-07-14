@@ -531,17 +531,20 @@ a:hover{
 		display: block;
 		margin-top: 30px;
 	}
-	.list-bar{
+	#nav-icon1{
 		display: none;
 	}
 	#top-menu .items-show{
-		margin-right:0px;
+		right:0px;
 	}
 	/*#site-header-nav #top-menu{
 		display: block !important;
 	}*/
 	#site-header-nav .head-title{
 		padding-left: 20px;
+	}
+	.baloon{
+		display: none;
 	}
 }
 
