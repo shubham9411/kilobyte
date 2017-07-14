@@ -12,16 +12,10 @@
 * @package kilobyte
 */
 get_header(); ?>
-<script type="text/javascript">
-  jQuery(document).ready(function(){
-   var gifSource = jQuery('#image-gif').attr('src'); //get the source in the var
-    jQuery('#image-gif').attr('src', ""); //erase the source     
-    jQuery('#image-gif').attr('src', gifSource+"?"+new Date().getTime());
-  });
-</script>
 <div class="upper-z">
 <!-- hero section -->
 <div class="hero-section container">
+    
     <div>
         <div class="tag-line">
             Digital Products that Businesses <i>love.</i>
@@ -126,9 +120,12 @@ get_header(); ?>
 <div class="client-logos"> 
 </div>
 </div>
-<script>
-
+<script type="text/javascript">
+  jQuery(document).ready(function(){
+   var gifSource = jQuery('#image-gif').attr('src'); //get the source in the var
+    jQuery('#image-gif').attr('src', ""); //erase the source     
+    jQuery('#image-gif').attr('src', gifSource+"?"+new Date().getTime());
+  });
 </script>
-
 <?php
 get_footer();

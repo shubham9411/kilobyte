@@ -26,18 +26,18 @@
 
 <body <?php body_class(); ?>>
 <nav class="navbar navbar-default" id="site-header-nav">
-	<div class= "container">
+	<div class= "container" style="overflow: hidden;">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-menu" aria-expanded="false" aria-controls="navbar">
+			<button type="button" class="navbar-toggle collapsed small-bar" data-toggle="collapse" data-target="#top-menu" aria-expanded="false" aria-controls="navbar">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a href="<?php echo bloginfo( 'url' ); ?>"><img src="<?php echo get_stylesheet_directory_uri().'/img/logo.png';?>" class="img-responsive logo-image" alt="Kilobyte Technologies"></a>
+			<div class="head-title"><a href="<?php echo bloginfo( 'url' ); ?>">Kilobyte Technologies</a></div>
 		</div>
-		<div id="top-menu" class="navbar-collapse collapse navbar-right">
-			<?php
+		<div id="top-menu" class="navbar-collapse collapse navbar-right menu-li">
+			<div class="items-show"><?php
 				$args = array(
 					'theme_location' => 'top',
 					'container' => 'ul',
@@ -48,9 +48,23 @@
 				);
 				wp_nav_menu( $args );
 				?>
+			</div>		
+				<div id="nav-icon1">
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				</div>
 		</div><!--.nav-collapse -->
 	</div>
 </nav>
 <div class="space-top">
 	
 </div>
+<script type="text/javascript">
+  jQuery(document).ready(function(){
+   jQuery('#nav-icon1').click(function(){
+		jQuery(this).toggleClass('open');
+		jQuery('.items-show').toggleClass('menu-show');
+	});
+  });
+</script>
