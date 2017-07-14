@@ -19,9 +19,9 @@ get_header();
 					<a href="<?php the_permalink();?>">
 					
 					<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-						<div class="thumbnail img-responsive" style="background-image:url('<?php echo $thumb["0"]?>');background-size: 100% 100%;height: 360px;">
+						<div class="thumbnail img-responsive port" style="background-image:url('<?php echo $thumb["0"]?>');background-size: 100% 100%;height: 360px;">
 							<div class="port-meta">
-								<h3 class="head"><?php the_title();?></h3>
+								<h2 class="head"><?php the_title();?></h2>
 								<p class="bodytext"><?php echo get_post_meta( $post->ID, 'sub_heading', true ); ?></p>
 							</div>
 						</div>

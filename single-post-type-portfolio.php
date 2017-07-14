@@ -8,7 +8,7 @@
  */
 
 get_header(); ?>
-<div class="single-page">
+<div class="single-page upper-z">
 	<div id="primary" class="content-area container">
 		<main id="main" class="site-main col-xs-12" role="main">
 

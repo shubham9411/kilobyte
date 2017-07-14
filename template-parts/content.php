@@ -12,7 +12,11 @@
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			?>
+		    	<div class="blog-title">
+				    <h1><?php the_title();?></h1>
+		        </div>
+	    <?php
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
@@ -27,7 +31,8 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php
+		
+		<?php 
 			the_content( sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */

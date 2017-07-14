@@ -19,14 +19,16 @@
 <link href="https://fonts.googleapis.com/css?family=Nova+Mono|Share+Tech+Mono" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <nav class="navbar navbar-default" id="site-header-nav">
-	<div class= "container">
+	<div class= "container" style="overflow: hidden;">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-menu" aria-expanded="false" aria-controls="navbar">
+			<button type="button" class="navbar-toggle collapsed small-bar" data-toggle="collapse" data-target="#top-menu" aria-expanded="false" aria-controls="navbar">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -35,7 +37,7 @@
 			<div class="head-title"><a href="<?php echo bloginfo( 'url' ); ?>">Kilobyte Technologies</a></div>
 		</div>
 		<div id="top-menu" class="navbar-collapse collapse navbar-right menu-li">
-			<?php
+			<div class="items-show"><?php
 				$args = array(
 					'theme_location' => 'top',
 					'container' => 'ul',
@@ -46,14 +48,15 @@
 				);
 				wp_nav_menu( $args );
 				?>
-		</div><!--.nav-collapse -->
-		<div class="list-bar">
-			<div id="nav-icon1">
-			  <span></span>
-			  <span></span>
-			  <span></span>
 			</div>
-		</div>
+			<div class="list-bar">
+				<div id="nav-icon1">
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				</div>
+			</div>
+		</div><!--.nav-collapse -->
 	</div>
 </nav>
 <div class="space-top">
@@ -63,7 +66,7 @@
   jQuery(document).ready(function(){
    jQuery('#nav-icon1').click(function(){
 		jQuery(this).toggleClass('open');
-		jQuery('#top-menu').toggleClass('menu-show');
+		jQuery('.items-show').toggleClass('menu-show');
 	});
   });
 </script>

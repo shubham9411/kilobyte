@@ -53,8 +53,5 @@
   </div>
   <span class="f-bottom">KILOBYTE TECHNOLOGIES</span>
 </div>
-
-	
 </body>
-
 </html>
