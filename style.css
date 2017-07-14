@@ -303,7 +303,7 @@ body{
 	transition:0.5s;
 }
 .space-top{
-	height: 100px;
+	height: 110px;
 	background: white;
 }
 
@@ -463,6 +463,9 @@ a:hover{
 	.animate-me .c{
 		top: 28%;
 		right: 35%;
+	}
+	#site-header-nav #top-menu{
+		margin-top: -38px;
 	}
 }
 @media screen and (max-width: 767px) {
