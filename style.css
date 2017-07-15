@@ -83,6 +83,10 @@ body{
 	color: white;
 	background-color:#0086fa;
 }
+.strt-btn:hover{
+	color: white;
+	opacity: 0.9;
+}
 @media screen and (max-width: 992px) and (min-width: 767px){
 	.tag-line{
 		font-size: 3em;
@@ -130,8 +134,7 @@ body{
 .work>.work-meta{
 	position: relative;
 	background: white;
-	height: 80%;
-	padding: 60px 50px 0px 50px;
+	padding: 60px 50px 90px 50px;
 }
 .w1,.w3,.w2{
 	height:220px; 
@@ -140,11 +143,10 @@ body{
 }
 .sm{
 	color:#0086fa;
-	margin-top: 100px;
+	margin-top: -160px;
 	text-align: center;
-	position: relative;
-	top: -250px;
-	left: -12%;
+	position: absolute;
+	left: 32.2%;
 }
 .sm>a>h2{
 	font-size: 2.5em;

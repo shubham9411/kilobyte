@@ -23,7 +23,7 @@ get_header(); ?>
         <div class="short-intro">
             We craft digital products and experiences to start, scale and empower identities and organisations.
         </div>
-      <div class="btn strt-btn">Experience More</div>
+      <div class="btn strt-btn" id="ex-more">Experience More</div>
     </div>
     <div class="gif row">
         <div class="col-md-8 col-sm-6">
@@ -47,7 +47,7 @@ get_header(); ?>
     endif;
     ?>
 
-<div class="work">
+<div class="work" id="scroll-onxp">
   <div class="work-meta container">
     <h1>Work</h1>
         <div class="row">
@@ -65,14 +65,14 @@ get_header(); ?>
                   </div>
             </div>
           </div>
-      <div class=" col-md-6 col-xs-12">
-          <div class="w3 port" style="background-image:url('<?php echo $thumb[2]["0"]?>');background-size: 100% 100%; ">
-              <div class="port-meta">
-                <h2><?php echo $titl[2] ?></h2>
-                <p><?php echo $sub[2] ?></p>
+          <div class=" col-md-6 col-xs-12">
+              <div class="w3 port" style="background-image:url('<?php echo $thumb[2]["0"]?>');background-size: 100% 100%; ">
+                  <div class="port-meta">
+                    <h2><?php echo $titl[2] ?></h2>
+                    <p><?php echo $sub[2] ?></p>
+                  </div>
               </div>
           </div>
-      </div>
       </div>
       <div class="sm"><a href="<?php echo get_page_link(1942);?>"><h2>See More</h2></a></div>
   </div>
@@ -142,6 +142,19 @@ get_header(); ?>
    var gifSource = jQuery('#image-gif').attr('src'); //get the source in the var
     jQuery('#image-gif').attr('src', ""); //erase the source     
     jQuery('#image-gif').attr('src', gifSource+"?"+new Date().getTime());
+
+    jQuery('#ex-more').click(function() {
+        if(jQuery(window).width() >=767){
+                jQuery('html, body').animate({
+                scrollTop: jQuery("#scroll-onxp").offset().top-30
+            }, 300);
+            }
+        else{
+            jQuery('html, body').animate({
+                scrollTop: jQuery("#scroll-onxp").offset().top-60
+            }, 300);
+        }
+    });
   });
 </script>
 <?php
