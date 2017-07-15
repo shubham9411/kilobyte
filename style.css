@@ -83,6 +83,10 @@ body{
 	color: white;
 	background-color:#0086fa;
 }
+.strt-btn:hover{
+	color: white;
+	opacity: 0.9;
+}
 @media screen and (max-width: 992px) and (min-width: 767px){
 	.tag-line{
 		font-size: 3em;

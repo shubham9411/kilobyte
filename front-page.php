@@ -130,12 +130,12 @@ get_header(); ?>
         if(jQuery(window).width() >=767){
                 jQuery('html, body').animate({
                 scrollTop: jQuery("#scroll-onxp").offset().top-30
-            }, 500);
+            }, 300);
             }
         else{
             jQuery('html, body').animate({
                 scrollTop: jQuery("#scroll-onxp").offset().top-60
-            }, 500);
+            }, 300);
         }
     });
   });
