@@ -99,7 +99,7 @@ get_header(); ?>
             <a href="<?php echo get_page_link(1997);?>"><h2>See more</h2></a>  
     </div>
     <div class="col-md-6 col-lg-6 blog">
-      <h1>Blogs</h1>
+      <h1>Thoughts</h1>
       <div class="card blog-cont">
               <?php 
                     $args = array('post_type' => 'post','posts_per_page' => 1 );
@@ -117,8 +117,25 @@ get_header(); ?>
   </div>
 </div>
 <!-- client logo -->
-<div class="client-logos"> 
-</div>
+  <div class="client-logos">
+    <div class="row">
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/br.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/bs.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/clj.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/fb.png" ?>" class="img-responsive"></div>
+
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/ew.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/w.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/fc.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/sd1.png" ?>" class="img-responsive"></div>
+
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/tm.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/m.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/o4l.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/fb.png" ?>" class="img-responsive"></div>
+
+    </div>
+  </div>
 </div>
 <script type="text/javascript">
   jQuery(document).ready(function(){

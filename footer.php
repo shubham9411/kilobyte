@@ -19,7 +19,14 @@
     <span class="f-main">WE'RE READY!&nbsp</span>
    	<span class="f-sec">Let's chat</span>
 </div>
-  <span class="f-info"><a href="a.com">KILOBYTE TECHNOLOGIES</a></span>
+  <span class="f-info"><a href="#">
+  KILOBYTE TECHNOLOGIES</a>
+  </span>
+  <span class="f-info2">
+  <a href="https://www.facebook.com/kbtech.co/">Facebook</a> /
+  <a href="https://www.linkedin.com/company-beta/17982982/">Linkedin</a> /
+  <a href="https://www.instagram.com/kilobytetech/?hl=en">Instagram</a>
+  </span>
 
 </footer>
  </body>

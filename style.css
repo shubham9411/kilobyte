@@ -146,9 +146,12 @@ body{
 	top: -250px;
 	left: -12%;
 }
-.sm>a>	h2{
+.sm>a>h2{
 	font-size: 2.5em;
+	border-bottom: 1px solid;
+	display: inline-block;
 }
+
 	.w2{
 		width: 50%; 
 	}
@@ -176,6 +179,7 @@ body{
 }
 .reading-section>.blog>a,.reading-section>.case-study>a{
 	float: right;
+	border-bottom: 1px solid;
 }
 .reading-section>.blog>h1,.reading-section>.case-study>h1{
 	margin-bottom: 10%;
@@ -206,17 +210,26 @@ body{
 }
 
 .client-logos{
-	height: 150px;
+	height: auto;
+	/*padding: 10px 30px;*/
 	background: #eff0f1;
 	margin-bottom:50px;
 }
+
+.client-logos>.row>div{
+	display: flex;	
+	padding: 20px 0;
+	justify-content: center;
+	align-items: center;
+}
+
 .upper-z{
 	z-index: 3;
     position: relative;
     background:white;
     width: 100%;
-    padding-top: 50px;
-    margin-top: -50px;
+    padding-top: 100px;
+    margin-top: -80px;
     margin-bottom: 600px;
     padding-bottom: 50px;
 }
@@ -288,16 +301,39 @@ body{
 	margin-top: .1em;
 	border-bottom: 1px solid;
 }
-.f-info a{
+.f-info a,.f-info2 a{
 	color:rgba(255,255,255,.6);
 }
 .f-info{
 	position: fixed;
-	bottom: 5em;
+	bottom:3em;
+	left:10%;
+	width: 100%;
+	z-index: 2;
+}
+.f-info2{
+	text-align: right;
+	position: fixed;
+	bottom:3em;
+	right:10%;
 	width: 100%;
 	color:rgba(255,255,255,.6);
 	z-index: 2;
 }
+
+@media screen and (max-width: 767px){
+	.f-info2{
+		right: 0;
+		bottom: 1em;
+		text-align: center;
+	}
+	.f-info{
+		left: 0;
+		text-align: center;
+
+	}
+}
+
 
 /*blog*/
 .blog-img>img{
@@ -1074,6 +1110,6 @@ height: auto;
 }
 .baloon{
 	position: absolute;
-	height: 90px;
-	top:65px;
+	height: 50px;
+	top:55px;
 }
