@@ -1,4 +1,4 @@
-<?php
+	<?php
 /*
 Template Name: casestudies
 */
@@ -16,14 +16,14 @@ get_header();
 		$i++;
 		?>
 		<div class="card" style='border-left: 10px solid <?php echo get_post_meta( $post->ID, 'case_study_color', true );?>;'>
-			<div class="row" onclick="window.location = '<?php the_permalink(); ?>';">
+			<div class="row casestudies-block" onclick="window.location = '<?php the_permalink(); ?>';">
 				<div class="col-md-8 col-sm-7 case-study-content">
-					<h1><?php the_title(); echo $i;?></h1>
+					<h1 style="margin-top: 0px;"><span class="title-hover"><?php the_title(); echo $i;?></span></h1>
 					<?php the_excerpt();?>
 				</div>
 				<div class="col-md-4 col-sm-5 case-study-image">
 
-					<div class=""><?php if(has_post_thumbnail() ): ?>
+					<div class="" align="middle"><?php if(has_post_thumbnail() ): ?>
 						<?php the_post_thumbnail('thumbnail','class=img-responsive');
 
 						endif;

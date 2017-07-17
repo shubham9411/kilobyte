@@ -100,6 +100,9 @@ body{
 		margin-top:-250px;
 		margin-left: 95%;
 	}
+	#site-header-nav .container .items-show{
+		margin-top: 20px;
+	}
 }
 
 .work{
@@ -441,7 +444,12 @@ body{
 .card:hover{
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-
+.case-studies .card:hover{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.cs-cont>h2>a,.blog-cont>h2>a{
+	color: #505659;
+}
 /*#site-header-nav{
 	padding-top: 0.3em;
 	border: none;
@@ -622,9 +630,6 @@ a:hover{
 	#top-menu .items-show{
 		right:0px;
 	}
-	/*#site-header-nav #top-menu{
-		display: block !important;
-	}*/
 	#site-header-nav .head-title{
 		padding-left: 20px;
 	}
@@ -710,8 +715,10 @@ a:hover{
 	background: #efe;
 }
 .case-study-content{
-	padding: 1em 1.7em;
 	font-size: 1.4em;
+}
+.casestudies-block{
+	padding: 1em 0em 1em 1.5em;
 }
 @media only screen and (max-width: 480px) {
 	.tagline{
@@ -1032,7 +1039,7 @@ height: auto;
 	font-weight: bold;
 }
 .menu-show{
-	right: -30px !important;
+	right: -30px;
 	transition:0.6s ease;
 }
 #nav-icon1{
@@ -1114,4 +1121,15 @@ height: auto;
 	position: absolute;
 	height: 50px;
 	top:55px;
+}
+.title-hover{
+	background-image: linear-gradient(180deg, transparent 65%, #FCF113 0px);
+	background-size: 0px 100%;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	transition: background-size 0.4s ease 0s;
+}
+.title-hover:hover{
+	background-size: 100% 100%;
+	cursor: pointer;
 }
