@@ -119,7 +119,7 @@ get_header(); ?>
 <!-- client logo -->
   <div class="client-logos">
     <div class="row">
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/br.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/v.png" ?>" class="img-responsive"></div>
       <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/bs.png" ?>" class="img-responsive"></div>
       <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/clj.png" ?>" class="img-responsive"></div>
       <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/fb.png" ?>" class="img-responsive"></div>
@@ -132,7 +132,7 @@ get_header(); ?>
       <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/tm.png" ?>" class="img-responsive"></div>
       <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/m.png" ?>" class="img-responsive"></div>
       <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/o4l.png" ?>" class="img-responsive"></div>
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/fb.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/au.png" ?>" class="img-responsive"></div>
 
     </div>
   </div>

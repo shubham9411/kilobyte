@@ -150,6 +150,7 @@ body{
 }
 .sm>a>h2{
 	font-size: 2.5em;
+	padding: 0 7px;
 	border-bottom: 1px solid;
 	display: inline-block;
 }
@@ -182,6 +183,7 @@ body{
 .reading-section>.blog>a,.reading-section>.case-study>a{
 	float: right;
 	border-bottom: 1px solid;
+	padding: 0 7px;
 }
 .reading-section>.blog>h1,.reading-section>.case-study>h1{
 	margin-bottom: 10%;
@@ -215,7 +217,6 @@ body{
 	height: auto;
 	/*padding: 10px 30px;*/
 	background: #eff0f1;
-	margin-bottom:50px;
 }
 
 .client-logos>.row>div{
@@ -233,7 +234,7 @@ body{
     padding-top: 100px;
     margin-top: -80px;
     margin-bottom: 600px;
-    padding-bottom: 50px;
+    overflow-x: hidden;
 }
 
 /*footer*/
@@ -266,7 +267,6 @@ body{
 	padding: 0;
     padding-top: 0;
     border: 1em solid #fff;
-    border-top: 0;
 }
 .footer_content{
 	position: fixed;

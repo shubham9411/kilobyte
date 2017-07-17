@@ -1,4 +1,3 @@
-
 <?php
 //custom post type portfolio
  if(! function_exists( 'kilobyte_custom_post_type_portfolio' )):
