@@ -117,16 +117,18 @@ get_header(); ?>
   </div>
 </div>
 <!-- client logo -->
-  <div class="client-logos">
+<div class="brands">
+  <div class="client-logos container">
+  <h1>Brands</h1>
     <div class="row">
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/v.png" ?>" class="img-responsive"></div>
       <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/bs.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/v.png" ?>" class="img-responsive"></div>
       <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/clj.png" ?>" class="img-responsive"></div>
       <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/fb.png" ?>" class="img-responsive"></div>
 
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/ew.png" ?>" class="img-responsive"></div>
       <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/w.png" ?>" class="img-responsive"></div>
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/fc.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/ew.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/fc.png" ?>" class="img-responsive"></div>      
       <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/sd1.png" ?>" class="img-responsive"></div>
 
       <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/tm.png" ?>" class="img-responsive"></div>
@@ -136,7 +138,8 @@ get_header(); ?>
 
     </div>
   </div>
-</div>
+  </div>
+</div> <!-- upper-z end -->
 <script type="text/javascript">
   jQuery(document).ready(function(){
    var gifSource = jQuery('#image-gif').attr('src'); //get the source in the var

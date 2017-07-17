@@ -22,6 +22,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 h1,h2{
 	font-weight: bolder;
 }
+h1{
+	font-size: 3em;
+}
 /*lg and md nav*/
 
 nav{
@@ -102,6 +105,8 @@ body{
 	}
 }
 
+
+
 .work{
 	/*position: relative;*/
 	background: #eff0f1;
@@ -111,7 +116,7 @@ body{
 }
 .work-meta>h1{
 	position: absolute;
-	top:-5%;
+	top:-6%;
 }
 
 @media screen and (max-width: 992px){
@@ -213,10 +218,34 @@ body{
 
 }
 
-.client-logos{
-	height: auto;
-	/*padding: 10px 30px;*/
+.brands{
+	width: 100%;
 	background: #eff0f1;
+	padding: 60px;
+}
+
+.client-logos{
+	position: relative;
+	height: auto;
+	padding: 30px 10px;
+	background: white;
+}
+
+.client-logos>h1{
+	position: absolute;
+	top: -11%;
+	left: 6%;
+}
+
+@media screen and (max-width: 996px){
+	.client-logos>h1{
+		top: -9%;
+	}
+}
+@media screen and (max-width: 690px){
+	.client-logos>h1{
+		top: -6%;
+	}
 }
 
 .client-logos>.row>div{
@@ -289,9 +318,6 @@ body{
 	}
 }
 
-.f-head{
-	padding-bottom: .5em;
-}
 .f-main{
 	font-size: 4em;
 	font-weight: bolder;
@@ -442,15 +468,6 @@ body{
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-/*#site-header-nav{
-	padding-top: 0.3em;
-	border: none;
-	position: fixed;
-	background-color: white;
-	z-index: 1;
-	width: 100%;
-}
-*/
 .navbar-nav > li > a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
@@ -471,7 +488,7 @@ body{
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #0086fa;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -540,16 +557,8 @@ a:hover{
     transform: rotate3d(1, 1, 1, 1turn) rotate3d(1, -1, 1, 1turn);
   }
 }
-@media screen and (max-width: 1200px){
-	.cube{
-		display: none;
-	}
-}
+
 @media screen and (max-width: 992px) and (min-width: 766px){
-	.animate-me .c{
-		top: 28%;
-		right: 35%;
-	}
 	#site-header-nav #top-menu{
 		margin-top: -38px;
 	}
@@ -567,14 +576,6 @@ a:hover{
 	.main-image{
 		margin-top:40px;
 		text-align: center;
-	}
-	
-	.animate-me{
-		margin-top: 75px;
-	}
-
-	.animate-me .c{
-		top: 25%;	
 	}
 	#site-header-nav{
 		position: relative;
@@ -606,9 +607,7 @@ a:hover{
 		padding-top: 50px;
 		font-size: 3em;
 	}
-	.short-intro{
-		font-size: 1.5em;
-	}
+
 	.gif .main-gif{
 		display: none;
 	}
@@ -744,100 +743,7 @@ a:hover{
 		display: flex !important;
 	}
 }
-/*frontpage image animation*/
-
-.animate-me{
-	-webkit-animation: dframe 3s ease-in-out 0s 1;
-	        animation: dframe 3s ease-in-out 0s 1;
-	position: relative;
-	margin-top: -50px;
-}
-.animate-me>img{
-	-webkit-transform:skewY(20deg);
-	        transform:skewY(20deg);
-	 max-width: 92%;
-	 margin-top: 5em;
-}
-
-.c{	
-	display: -webkit-box;	
-	display: -ms-flexbox;	
-	display: flex;
-	position: absolute;
-  	top: 28%;
-  	right: 45%;
-  	opacity: .8;
-  	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-  	font-size: 1.5em;
-  	font-weight: bold;
-  	color:#999;
-}
-
-@-webkit-keyframes dframe{
-  0%{
-      opacity: 0;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"}
-  50%{
-      opacity: .5;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"}
-  100%{
-      opacity: 1;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"}
-}
-
-@keyframes dframe{
-  0%{
-      opacity: 0;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"}
-  50%{
-      opacity: .5;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"}
-  100%{
-      opacity: 1;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"}
-}
-
-.typewriter p{
-  color:rgba(71, 48, 84, 0.73);
-  overflow: hidden; 
-  border-right: .15em solid orange;
-  white-space: nowrap;
-  margin: 0 auto; 
-  letter-spacing: .15em; 
-  -webkit-animation: 
-    typing 3s steps(30, end) 3s,
-    blink-caret .5s step-end 3s infinite; 
-          animation: 
-    typing 3s steps(30, end) 3s,
-    blink-caret .5s step-end 3s infinite;  
-}
-
-.typewriter{
-  -webkit-transform: skewY(20deg);
-          transform: skewY(20deg);
-  opacity:0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	}
-
-@-webkit-keyframes typing {
-  from { width: 0% }
-  to { width: 100% }
-}
-
-@keyframes typing {
-  from { width: 0% }
-  to { width: 100% }
-}
-
-@-webkit-keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
-}
+/*frontpage image animation removed	*/
 
 .map{
 	padding:10% 0%;
