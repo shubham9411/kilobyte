@@ -33,7 +33,6 @@ nav{
 nav#site-header-nav.navbar{
 	position: fixed;
 	width: 100%;
-	z-index: 2;
 	padding: 2px 0px 5px 0px;
 	z-index: 4;
 }
@@ -103,9 +102,10 @@ body{
 		margin-top:-250px;
 		margin-left: 95%;
 	}
+	#site-header-nav .container .items-show{
+		margin-top: 20px;
+	}
 }
-
-
 
 .work{
 	/*position: relative;*/
@@ -139,10 +139,10 @@ body{
 .work>.work-meta{
 	position: relative;
 	background: white;
-	padding: 60px 50px 90px 50px;
+	padding: 30px 50px 50px 50px;
 }
 .w1,.w3,.w2{
-	height:220px; 
+	height:245px; 
 	color:#333;
 	margin-top: 30px;
 }
@@ -156,7 +156,7 @@ body{
 .sm>a>h2{
 	font-size: 2.5em;
 	padding: 0 7px;
-	border-bottom: 1px solid;
+	border-bottom: 2px solid;
 	display: inline-block;
 }
 
@@ -164,7 +164,7 @@ body{
 		width: 50%; 
 	}
 	.w3{
-		height: 469px;
+		height: 520px;
 	}
 .port{
 	padding-top: 1px;
@@ -182,12 +182,13 @@ body{
 	visibility:visible;
 }
 .reading-section{
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .reading-section>.blog>a,.reading-section>.case-study>a{
 	float: right;
-	border-bottom: 1px solid;
+	border-bottom: 2px solid;
+	text-decoration: none;
 	padding: 0 7px;
 }
 .reading-section>.blog>h1,.reading-section>.case-study>h1{
@@ -221,7 +222,7 @@ body{
 .brands{
 	width: 100%;
 	background: #eff0f1;
-	padding: 60px;
+	padding: 4em 0;
 }
 
 .client-logos{
@@ -233,18 +234,18 @@ body{
 
 .client-logos>h1{
 	position: absolute;
-	top: -11%;
+	top: -9%;
 	left: 6%;
 }
 
 @media screen and (max-width: 996px){
 	.client-logos>h1{
-		top: -9%;
+		top: -6%;
 	}
 }
 @media screen and (max-width: 690px){
 	.client-logos>h1{
-		top: -6%;
+		top: -5%;
 	}
 }
 
@@ -260,7 +261,7 @@ body{
     position: relative;
     background:white;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 80px;
     margin-top: -80px;
     margin-bottom: 600px;
     overflow-x: hidden;
@@ -468,6 +469,13 @@ body{
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.case-studies .card:hover{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.cs-cont>h2>a,.blog-cont>h2>a{
+	color: #505659;
+}
+
 .navbar-nav > li > a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
@@ -517,7 +525,6 @@ html{
 body {
   position: relative;
   margin: 0;
-  padding-bottom: 6rem;
   min-height: 100%;
  }
 
@@ -621,9 +628,6 @@ a:hover{
 	#top-menu .items-show{
 		right:0px;
 	}
-	/*#site-header-nav #top-menu{
-		display: block !important;
-	}*/
 	#site-header-nav .head-title{
 		padding-left: 20px;
 	}
@@ -709,8 +713,10 @@ a:hover{
 	background: #efe;
 }
 .case-study-content{
-	padding: 1em 1.7em;
 	font-size: 1.4em;
+}
+.casestudies-block{
+	padding: 1em 0em 1em 1.5em;
 }
 @media only screen and (max-width: 480px) {
 	.tagline{
@@ -938,7 +944,7 @@ height: auto;
 	font-weight: bold;
 }
 .menu-show{
-	right: -30px !important;
+	right: -30px;
 	transition:0.6s ease;
 }
 #nav-icon1{
@@ -1020,4 +1026,15 @@ height: auto;
 	position: absolute;
 	height: 50px;
 	top:55px;
+}
+.title-hover{
+	background-image: linear-gradient(180deg, transparent 65%, #FCF113 0px);
+	background-size: 0px 100%;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	transition: background-size 0.4s ease 0s;
+}
+.title-hover:hover{
+	background-size: 100% 100%;
+	cursor: pointer;
 }

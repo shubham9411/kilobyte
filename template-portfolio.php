@@ -4,6 +4,9 @@ Template Name: Portfolio
 */
 get_header();
 ?>
+
+
+
 <div class="upper-z">
 <div class="container">
 	<div class="row portfolio">
@@ -33,7 +36,7 @@ get_header();
 			endwhile;
 		endif;
 		?>
-	</div>	
-</div>
-</div>
+	</div> 
+</div> <!-- end -cont -->
+</div>  <!-- end-upp -->
 <?php get_footer();

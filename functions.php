@@ -136,6 +136,7 @@ if ( ! function_exists( 'kilobyte_excerpt_more' ) ) {
 	function kilobyte_excerpt_more() {
 		global $post;
 		return '... <a href="' . get_the_permalink() . '" title="Read More" class="read-more">' . __( '<br/>Continue reading <span class="meta-nav">&rarr;</span>', 'kilobyte' ) . '</a>';
+
 	}
 	add_filter( 'excerpt_more', 'kilobyte_excerpt_more' );
 }
