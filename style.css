@@ -548,11 +548,6 @@ a:hover{
     transform: rotate3d(1, 1, 1, 1turn) rotate3d(1, -1, 1, 1turn);
   }
 }
-@media screen and (max-width: 1200px){
-	.cube{
-		display: none;
-	}
-}
 @media screen and (max-width: 992px) and (min-width: 766px){
 	.animate-me .c{
 		top: 28%;
@@ -637,7 +632,18 @@ a:hover{
 		display: none;
 	}
 }
-
+@media screen and (min-width: 992px) and (max-width:1200px){
+	.hero-section .gif{
+		width: 80%;
+	}
+	.gif .main-gif{
+		margin-left: 98%;
+		margin-top: -340px;
+	}
+	.hero-section .short-intro{
+		font-size: 1.7em;
+	}
+}
 @media screen and (max-width: 480px) {
 	
 	.contact-details input[type="text"],.contact-details input[type="email"],.contact-details select{
