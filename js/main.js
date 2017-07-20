@@ -3,9 +3,40 @@ jQuery('.grid').masonry({
 	horizontalOrder: true,
 });
 
-setTimeout(function(){
-  jQuery(".typewriter").css("opacity","1");
-},3500);
+
+// portfolio
+	var modal;
+	function moda(d){
+		modal = document.getElementById('myModal'+d);
+		 modal.style.display = "block";
+		 jQuery('.upper-z').css('z-index','4');
+		 var a = jQuery('.img-a').html();
+	}
+
+	var span = document.getElementsByClassName("close")[0];
+	  span.onclick = function() { 
+	  jQuery('.upper-z').css('z-index','3');
+	  modal.style.display = "none";
+	}
+
+	var flag = 1;
+	jQuery('.designs').hide();
+	jQuery('#changeIt').on('click',function(){
+		if(flag===1){
+			jQuery('.portfolio').hide();
+			jQuery('.designs').show();
+			jQuery('#changeIt').html("Check out our cool digital products!")
+			flag = 0;
+		}
+		else{
+			jQuery('.portfolio').show();
+			jQuery('.designs').hide();
+			jQuery('#changeIt').html("Check out our awesome designs!")
+			flag = 1;
+		}
+	});
+
+// portfolio end
 
 // google-analytics
 

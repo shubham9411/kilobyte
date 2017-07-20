@@ -33,43 +33,30 @@ get_header(); ?>
     </div>
 </div>
 <!-- work section -->
-<?php
- $i=0;
- $args = array(
-      'post_type'   => 'post-type-portfolio','posts_per_page' => 3);
-    $loop = new WP_Query( $args );
-    if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();
-      $thumb[$i] = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
-      $titl[$i] = get_the_title();
-      $sub[$i] = get_post_meta( $post->ID, 'sub_heading', true );
-      $i=$i+1;
-      endwhile;
-    endif;
-    ?>
 
 <div class="work" id="scroll-onxp">
   <div class="work-meta container">
     <h1>Work</h1>
         <div class="row">
           <div class="col-md-6 col-xs-12">
-            <div class="w1 port " style="background-image:url('<?php echo $thumb[0]["0"]?>');background-size: 100% 100%;">
+            <div class="w1 port " style="background-image:url('<?php echo get_template_directory_uri()."/img/portfolio/farcon.png"?>');background-size: 100% 100%;">
                 <div class="port-meta">
-                  <h2><?php echo $titl[0] ?></h2>
-                  <p><?php echo $sub[0] ?></p>
+                  <h2>Org for leagues</h2>
+                  <p>Online platform where you can buy vegetales</p>
                 </div>
             </div>       
-            <div class="w2 port" style="background-image:url('<?php echo $thumb[1]["0"]?>');background-size: 100% 100%; ">
+            <div class="w2 port" style="background-image:url('<?php echo get_template_directory_uri()."/img/portfolio/flyboy.png"?>');background-size: 100% 100%; ">
                   <div class="port-meta">
-                    <h2><?php echo $titl[1] ?></h2>
-                    <p><?php echo $sub[1] ?></p>
+                    <h2>Flyboy</h2>
+                  <p></p>
                   </div>
             </div>
           </div>
           <div class=" col-md-6 col-xs-12">
-              <div class="w3 port" style="background-image:url('<?php echo $thumb[2]["0"]?>');background-size: 100% 100%; ">
+              <div class="w3 port" style="background-image:url('<?php echo get_template_directory_uri()."/img/portfolio/o4l.png" ?>');background-size: 100% 100%; ">
                   <div class="port-meta">
-                    <h2><?php echo $titl[2] ?></h2>
-                    <p><?php echo $sub[2] ?></p>
+                    <h2>Org for leagues</h2>
+                    <p>A platform to host leagues and manage teams</p>
                   </div>
               </div>
           </div>
@@ -117,16 +104,18 @@ get_header(); ?>
   </div>
 </div>
 <!-- client logo -->
-  <div class="client-logos">
+<div class="brands">
+  <div class="client-logos container">
+  <h1>Brands</h1>
     <div class="row">
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/v.png" ?>" class="img-responsive"></div>
       <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/bs.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/v.png" ?>" class="img-responsive"></div>
       <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/clj.png" ?>" class="img-responsive"></div>
       <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/fb.png" ?>" class="img-responsive"></div>
 
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/ew.png" ?>" class="img-responsive"></div>
       <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/w.png" ?>" class="img-responsive"></div>
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/fc.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/ew.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/fc.png" ?>" class="img-responsive"></div>      
       <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/sd1.png" ?>" class="img-responsive"></div>
 
       <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/tm.png" ?>" class="img-responsive"></div>
@@ -134,9 +123,15 @@ get_header(); ?>
       <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/o4l.png" ?>" class="img-responsive"></div>
       <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/au.png" ?>" class="img-responsive"></div>
 
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/br.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/d1.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/tmb.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/fa.png" ?>" class="img-responsive"></div>
+
     </div>
   </div>
-</div>
+  </div>
+</div> <!-- upper-z end -->
 <script type="text/javascript">
   //gif
   jQuery(document).ready(function(){

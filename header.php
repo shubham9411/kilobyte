@@ -47,7 +47,7 @@
 				);
 				wp_nav_menu( $args );
 				?>
-			</div>		
+			</div>
 				<div id="nav-icon1">
 				  <span></span>
 				  <span></span>

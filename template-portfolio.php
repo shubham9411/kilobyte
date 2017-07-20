@@ -6,6 +6,7 @@ get_header();
 ?>
 <div class="upper-z">
 <div class="container">
+<div style="height: 5em;"><div id="changeIt">Check out our awesome designs!</div></div>
 	<div class="row portfolio">
 		<?php
 		$args = array(
@@ -33,7 +34,28 @@ get_header();
 			endwhile;
 		endif;
 		?>
+	</div> 
+
+	<div class="designs">
+		<div class="row">
+			<?php $i=0;
+			for($i=1;$i<=16;$i++){
+				echo "<div class='col-md-3'><img src='".get_stylesheet_directory_uri()."/img/designs/".$i.".png' id='myImg".$i."' onclick=moda(".$i.")> </div>";
+				?>
+				<div id="myModal<?php echo $i; ?>" class="modal">
+					  <!-- The Close Button -->
+					  <span class="close" onclick="document.getElementById('myModal<?php echo $i; ?>').style.display='none'">&times;</span>
+					   <div class="shrt"><?php echo do_shortcode('[masterslider id='.$i.']' ); ?></div>
+				</div>
+				<?php
+			}
+			?>
+		</div>	
+					
 	</div>	
 </div>
 </div>
+<script type="text/javascript">
+
+</script>
 <?php get_footer();

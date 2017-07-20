@@ -22,6 +22,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 h1,h2{
 	font-weight: bolder;
 }
+h1{
+	font-size: 3em;
+}
 /*lg and md nav*/
 
 nav{
@@ -30,7 +33,6 @@ nav{
 nav#site-header-nav.navbar{
 	position: fixed;
 	width: 100%;
-	z-index: 2;
 	padding: 2px 0px 5px 0px;
 	z-index: 4;
 }
@@ -114,7 +116,7 @@ body{
 }
 .work-meta>h1{
 	position: absolute;
-	top:-5%;
+	top:-6%;
 }
 
 @media screen and (max-width: 992px){
@@ -137,10 +139,10 @@ body{
 .work>.work-meta{
 	position: relative;
 	background: white;
-	padding: 60px 50px 90px 50px;
+	padding: 30px 50px 50px 50px;
 }
 .w1,.w3,.w2{
-	height:220px; 
+	height:245px; 
 	color:#333;
 	margin-top: 30px;
 }
@@ -154,7 +156,7 @@ body{
 .sm>a>h2{
 	font-size: 2.5em;
 	padding: 0 7px;
-	border-bottom: 1px solid;
+	border-bottom: 2px solid;
 	display: inline-block;
 }
 
@@ -162,7 +164,7 @@ body{
 		width: 50%; 
 	}
 	.w3{
-		height: 469px;
+		height: 520px;
 	}
 .port{
 	padding-top: 1px;
@@ -180,12 +182,13 @@ body{
 	visibility:visible;
 }
 .reading-section{
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .reading-section>.blog>a,.reading-section>.case-study>a{
 	float: right;
-	border-bottom: 1px solid;
+	border-bottom: 2px solid;
+	text-decoration: none;
 	padding: 0 7px;
 }
 .reading-section>.blog>h1,.reading-section>.case-study>h1{
@@ -216,10 +219,34 @@ body{
 
 }
 
-.client-logos{
-	height: auto;
-	/*padding: 10px 30px;*/
+.brands{
+	width: 100%;
 	background: #eff0f1;
+	padding: 4em 0;
+}
+
+.client-logos{
+	position: relative;
+	height: auto;
+	padding: 30px 10px;
+	background: white;
+}
+
+.client-logos>h1{
+	position: absolute;
+	top: -9%;
+	left: 6%;
+}
+
+@media screen and (max-width: 996px){
+	.client-logos>h1{
+		top: -6%;
+	}
+}
+@media screen and (max-width: 690px){
+	.client-logos>h1{
+		top: -5%;
+	}
 }
 
 .client-logos>.row>div{
@@ -234,7 +261,7 @@ body{
     position: relative;
     background:white;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 80px;
     margin-top: -80px;
     margin-bottom: 600px;
     overflow-x: hidden;
@@ -292,9 +319,6 @@ body{
 	}
 }
 
-.f-head{
-	padding-bottom: .5em;
-}
 .f-main{
 	font-size: 4em;
 	font-weight: bolder;
@@ -444,21 +468,14 @@ body{
 .card:hover{
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
 .case-studies .card:hover{
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .cs-cont>h2>a,.blog-cont>h2>a{
 	color: #505659;
 }
-/*#site-header-nav{
-	padding-top: 0.3em;
-	border: none;
-	position: fixed;
-	background-color: white;
-	z-index: 1;
-	width: 100%;
-}
-*/
+
 .navbar-nav > li > a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
@@ -479,7 +496,7 @@ body{
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #0086fa;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -489,9 +506,10 @@ body{
 }
 
 .menu-bar > li > a{
-	font-size: 1.3em;
+	font-size: 1.1em;
 	font-family: ubuntu,'Share Tech Mono', sans-serif;
 	font-style: normal;
+	font-weight: bold;
 	-webkit-transition: .5s;
 	transition: .5s;
 }
@@ -508,7 +526,6 @@ html{
 body {
   position: relative;
   margin: 0;
-  padding-bottom: 6rem;
   min-height: 100%;
  }
 
@@ -548,11 +565,8 @@ a:hover{
     transform: rotate3d(1, 1, 1, 1turn) rotate3d(1, -1, 1, 1turn);
   }
 }
+
 @media screen and (max-width: 992px) and (min-width: 766px){
-	.animate-me .c{
-		top: 28%;
-		right: 35%;
-	}
 	#site-header-nav #top-menu{
 		margin-top: -38px;
 	}
@@ -570,14 +584,6 @@ a:hover{
 	.main-image{
 		margin-top:40px;
 		text-align: center;
-	}
-	
-	.animate-me{
-		margin-top: 75px;
-	}
-
-	.animate-me .c{
-		top: 25%;	
 	}
 	#site-header-nav{
 		position: relative;
@@ -609,9 +615,7 @@ a:hover{
 		padding-top: 50px;
 		font-size: 3em;
 	}
-	.short-intro{
-		font-size: 1.5em;
-	}
+
 	.gif .main-gif{
 		display: none;
 	}
@@ -757,100 +761,7 @@ a:hover{
 		display: flex !important;
 	}
 }
-/*frontpage image animation*/
-
-.animate-me{
-	-webkit-animation: dframe 3s ease-in-out 0s 1;
-	        animation: dframe 3s ease-in-out 0s 1;
-	position: relative;
-	margin-top: -50px;
-}
-.animate-me>img{
-	-webkit-transform:skewY(20deg);
-	        transform:skewY(20deg);
-	 max-width: 92%;
-	 margin-top: 5em;
-}
-
-.c{	
-	display: -webkit-box;	
-	display: -ms-flexbox;	
-	display: flex;
-	position: absolute;
-  	top: 28%;
-  	right: 45%;
-  	opacity: .8;
-  	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-  	font-size: 1.5em;
-  	font-weight: bold;
-  	color:#999;
-}
-
-@-webkit-keyframes dframe{
-  0%{
-      opacity: 0;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"}
-  50%{
-      opacity: .5;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"}
-  100%{
-      opacity: 1;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"}
-}
-
-@keyframes dframe{
-  0%{
-      opacity: 0;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"}
-  50%{
-      opacity: .5;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"}
-  100%{
-      opacity: 1;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"}
-}
-
-.typewriter p{
-  color:rgba(71, 48, 84, 0.73);
-  overflow: hidden; 
-  border-right: .15em solid orange;
-  white-space: nowrap;
-  margin: 0 auto; 
-  letter-spacing: .15em; 
-  -webkit-animation: 
-    typing 3s steps(30, end) 3s,
-    blink-caret .5s step-end 3s infinite; 
-          animation: 
-    typing 3s steps(30, end) 3s,
-    blink-caret .5s step-end 3s infinite;  
-}
-
-.typewriter{
-  -webkit-transform: skewY(20deg);
-          transform: skewY(20deg);
-  opacity:0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	}
-
-@-webkit-keyframes typing {
-  from { width: 0% }
-  to { width: 100% }
-}
-
-@keyframes typing {
-  from { width: 0% }
-  to { width: 100% }
-}
-
-@-webkit-keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
-}
+/*frontpage image animation removed	*/
 
 .map{
 	padding:10% 0%;
@@ -1030,11 +941,10 @@ height: auto;
 #top-menu{
 	/*margin-left: 30px;*/
 }
-.items-show{
-	
+.items-show{	
 	transition:0.6s ease;
 	position: relative;
-	right: -700px;
+	right: -800px;
 }
 .head-title{
 	margin-top: 12px;
@@ -1139,3 +1049,100 @@ height: auto;
 	background-size: 100% 100%;
 	cursor: pointer;
 }
+
+
+/*portfolio designs*/
+
+.designs>.row>div>img{
+			max-height: 300px;
+			padding: 1em;
+			margin-bottom: 50px; 
+			border-radius: 5px;
+ 	   		cursor: pointer;
+    		transition: 0.3s;
+		}
+
+
+.designs>.row>div>img:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden border-style:  default */
+    position:fixed; /* Stay in place */
+    z-index: 7; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+
+/* Add Animation - Zoom in the Modal */
+.modal-content { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+.ms-slide .ms-slide-bgcont img{
+    height: 100% !important;
+    width: 100% !important;
+}
+
+#changeIt{
+	color:#0086fa;
+	font-size: 1.5em;
+	float: right;
+	display: inline-block;
+    cursor: pointer;
+    border-bottom: 2px solid;
+}
+
+		
