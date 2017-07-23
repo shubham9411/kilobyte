@@ -641,11 +641,11 @@ a:hover{
 		width: 80%;
 	}
 	.gif .main-gif{
-		margin-left: 98%;
+		margin-left: 96%;
 		margin-top: -340px;
 	}
 	.hero-section .short-intro{
-		font-size: 1.7em;
+		font-size: 1.6em;
 	}
 }
 @media screen and (max-width: 480px) {
