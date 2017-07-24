@@ -636,7 +636,18 @@ a:hover{
 		display: none;
 	}
 }
-
+@media screen and (min-width: 992px) and (max-width:1200px){
+	.hero-section .gif{
+		width: 80%;
+	}
+	.gif .main-gif{
+		margin-left: 96%;
+		margin-top: -340px;
+	}
+	.hero-section .short-intro{
+		font-size: 1.6em;
+	}
+}
 @media screen and (max-width: 480px) {
 	
 	.contact-details input[type="text"],.contact-details input[type="email"],.contact-details select{

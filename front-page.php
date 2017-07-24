@@ -15,7 +15,7 @@ get_header(); ?>
 <div class="upper-z">
 <!-- hero section -->
 <div class="hero-section container">
-    <div><img src="<?php echo get_stylesheet_directory_uri().'/img/baloon.png'?>" class="baloon"></div>
+    <div><img src="<?php echo get_stylesheet_directory_uri().'/img/baloon.png'?>" class="baloon img-responsive"></div>
     <div>
         <div class="tag-line">
             Digital Products that Businesses <i>love.</i>
@@ -133,11 +133,13 @@ get_header(); ?>
   </div>
 </div> <!-- upper-z end -->
 <script type="text/javascript">
+  //gif
   jQuery(document).ready(function(){
    var gifSource = jQuery('#image-gif').attr('src'); //get the source in the var
     jQuery('#image-gif').attr('src', ""); //erase the source     
     jQuery('#image-gif').attr('src', gifSource+"?"+new Date().getTime());
 
+  // Scroll
     jQuery('#ex-more').click(function() {
         if(jQuery(window).width() >=767){
                 jQuery('html, body').animate({
