@@ -45,7 +45,7 @@ get_header(); ?>
                   <p>Online platform where you can buy vegetales</p>
                 </div>
             </div>       
-            <div class="w2 port" style="background-image:url('<?php echo get_template_directory_uri()."/img/portfolio/flyboy.png"?>');background-size: 100% 100%; ">
+            <div class="w2 port" style="background-image:url('<?php echo get_template_directory_uri()."/img/portfolio/flyboy.jpg"?>');background-size: 100% 100%; ">
                   <div class="port-meta">
                     <h2>Flyboy</h2>
                   <p></p>
@@ -106,27 +106,27 @@ get_header(); ?>
 <!-- client logo -->
 <div class="brands">
   <div class="client-logos container">
-  <h1>Brands</h1>
+  <h1>Success partners</h1>
     <div class="row">
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/bs.png" ?>" class="img-responsive"></div>
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/v.png" ?>" class="img-responsive"></div>
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/clj.png" ?>" class="img-responsive"></div>
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/fb.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/bs.jpg" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/v.jpg" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/clj.jpg" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/fb.jpg" ?>" class="img-responsive"></div>
 
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/w.png" ?>" class="img-responsive"></div>
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/ew.png" ?>" class="img-responsive"></div>
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/fc.png" ?>" class="img-responsive"></div>      
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/sd1.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/w.jpg" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/ew.jpg" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/fc.jpg" ?>" class="img-responsive"></div>      
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/sd1.jpg" ?>" class="img-responsive"></div>
 
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/tm.png" ?>" class="img-responsive"></div>
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/m.png" ?>" class="img-responsive"></div>
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/o4l.png" ?>" class="img-responsive"></div>
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/au.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/tm.jpg" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/m.jpg" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/o4l.jpg" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/au.jpg" ?>" class="img-responsive"></div>
 
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/br.png" ?>" class="img-responsive"></div>
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/d1.png" ?>" class="img-responsive"></div>
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/tmb.png" ?>" class="img-responsive"></div>
-      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/fa.png" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/br.jpg" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/d1.jpg" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/tmb.jpg" ?>" class="img-responsive"></div>
+      <div class="col-md-3 col-sm-4 col-xs-6"><img src="<?php echo get_template_directory_uri()."/img/logos/fa.jpg" ?>" class="img-responsive"></div>
 
     </div>
   </div>

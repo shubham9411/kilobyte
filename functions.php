@@ -110,9 +110,13 @@ add_action( 'widgets_init', 'kilobyte_widgets_init' );
  * Enqueue scripts and styles.
  */
 function kilobyte_scripts() {
+	wp_enqueue_style( 'kilobyte-lightcase-css', get_template_directory_uri() . '/lib/lightcase/src/css/lightcase.css' );
+
 	wp_enqueue_style( 'kilobyte-bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css' );
 
 	wp_enqueue_style( 'kilobyte-style', get_stylesheet_uri() );
+
+	wp_enqueue_script( 'kilobyte-lightcase-js', get_template_directory_uri() . '/lib/lightcase/src/js/lightcase.js', array( 'jquery'), '1', true );
 
 	wp_enqueue_script( 'kilobyte-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery', 'masonry' ), '20151215', true );
 

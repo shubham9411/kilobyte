@@ -1,23 +1,25 @@
-jQuery('.grid').masonry({
-	itemSelector: '.blogc',
-	horizontalOrder: true,
-});
+// jQuery('.grid').masonry({
+// 	itemSelector: '.blogc',
+// 	horizontalOrder: true,
+// });
 
 
 // portfolio
-	var modal;
-	function moda(d){
-		modal = document.getElementById('myModal'+d);
-		 modal.style.display = "block";
-		 jQuery('.upper-z').css('z-index','4');
-		 var a = jQuery('.img-a').html();
-	}
+	// var modal;
+	// var i=0;
+	// function moda(d){
+	// 	i=d;
+	// 	modal = document.getElementById('myModal'+i);
+	// 	 modal.style.display = "block";
+	// 	 jQuery('.upper-z').css('z-index','4');
+	// 	 var a = jQuery('.img-a').html();
 
-	var span = document.getElementsByClassName("close")[0];
-	  span.onclick = function() { 
-	  jQuery('.upper-z').css('z-index','3');
-	  modal.style.display = "none";
-	}
+	//   jQuery('#close'+i).on('click',function(){ 
+	//   	  jQuery('.upper-z').css('z-index','3');
+	//   	  modal.style.display = "none";
+	//   	})
+	// }
+
 
 	var flag = 1;
 	jQuery('.designs').hide();

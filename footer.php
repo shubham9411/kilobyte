@@ -13,11 +13,11 @@
 <?php wp_footer(); ?>
 
  <footer class="bottom-footer">
-<a href="#" class="footer_link"></a>
+<a href="<?php echo get_page_link(1950);?>" class="footer_link"></a>
 <div class="footer_content">
     <div class="f-head">SO WHAT'S NEXT?</div>
     <span class="f-main">WE'RE READY!&nbsp</span>
-   	<span class="f-sec">Let's chat</span>
+    <span class="f-sec">Let's chat</span>
 </div>
   <span class="f-info"><a href="#">
   KILOBYTE TECHNOLOGIES</a>
