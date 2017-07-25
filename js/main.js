@@ -1,26 +1,4 @@
-// jQuery('.grid').masonry({
-// 	itemSelector: '.blogc',
-// 	horizontalOrder: true,
-// });
-
-
-// portfolio
-	// var modal;
-	// var i=0;
-	// function moda(d){
-	// 	i=d;
-	// 	modal = document.getElementById('myModal'+i);
-	// 	 modal.style.display = "block";
-	// 	 jQuery('.upper-z').css('z-index','4');
-	// 	 var a = jQuery('.img-a').html();
-
-	//   jQuery('#close'+i).on('click',function(){ 
-	//   	  jQuery('.upper-z').css('z-index','3');
-	//   	  modal.style.display = "none";
-	//   	})
-	// }
-
-
+//portfolio
 	var flag = 1;
 	jQuery('.designs').hide();
 	jQuery('#changeIt').on('click',function(){
