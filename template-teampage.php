@@ -1,4 +1,3 @@
-
 <?php
 /*
 Template Name: Team page
@@ -34,9 +33,9 @@ get_header();
 				        echo '<h2>'.$author_info->first_name . ' ' . $author_info->last_name.'</h2>';
 				        echo '<h4>'.$author_info->urole.'</h4>';
 						?>
-						<a href="<?php echo get_page_link(133);
+						<a href="<?php echo get_page_link(1987);
 						echo "?uid=".$author->ID ;?>">
-						<button class="m-explore-btn btn-sm">EXPLORE MORE</button></a>
+						<button class="m-explore-btn btn-sm">KNOW MORE</button></a>
 						</div>
 					<?php
 				    }
